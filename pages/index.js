@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react'
+
 // import { FaGithub, FaRegEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
