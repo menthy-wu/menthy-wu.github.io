@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react'
+import BackgroundVideo from '../components/backgroundVideo';
+
 
 import { FaGithub, FaRegEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
 
@@ -21,6 +22,7 @@ export default function Home() {
           Menthy Wu
         </p>
         <p className="z-30 font-montserrat text-5xl font-bold text-white">Computer Science at UCR</p>
+        <BackgroundVideo></BackgroundVideo>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
