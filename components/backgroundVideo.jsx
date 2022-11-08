@@ -5,7 +5,7 @@ const BackgroundVideo = ()=>
 {
     return(
         <div>
-            <Image></Image>
+            <Image src = "\public\backGroundVideo1\backgroundVideo-20.png"></Image>
         </div>
     )
 }
