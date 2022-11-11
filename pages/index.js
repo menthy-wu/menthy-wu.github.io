@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
-        <Landing picNum={48}/>
+        <Landing picNum={44}/>
       </main>
 
       <Footer/>
