@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
-import Landing from '../components/landing';
-import Footer from '../components/footer';
+import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (

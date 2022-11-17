@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./Nav";
 // import { Controller, Scene } from "react-scrollmagic";
 
-const Landing = ({ pictureList, picNum }) => {
+const Landing = () => {
     return (
         <div className="w-full bg-gray">
             <Nav />
