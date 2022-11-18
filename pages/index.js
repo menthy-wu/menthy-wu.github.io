@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className="flex w-full flex-col items-center justify-center text-center">
-        <Landing picNum={44}/>
+        <Landing/>
         <About/>
         <Projects/>
       </main>
