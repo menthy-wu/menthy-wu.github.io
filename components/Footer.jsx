@@ -13,7 +13,7 @@ const Footer = () => {
         <FaRegEnvelope className="text-6xl" />
       </a>
       <a href="https://www.instagram.com/wmx_owo/">
-        <FaInstagram className="text-6xl" />
+        <FaInstagram className="text-6xl"/>
       </a>
       <a href="https://www.linkedin.com/in/mengxuan-wu/">
         <FaLinkedin className="text-6xl" />
