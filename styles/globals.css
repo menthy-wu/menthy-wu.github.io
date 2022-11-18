@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 .black-stroke {
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 2px black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.white-stroke {
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 1px white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
