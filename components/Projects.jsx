@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa";
 import { Col, Row } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
 import Project from "./Project";
 
 const Projects = () => {
