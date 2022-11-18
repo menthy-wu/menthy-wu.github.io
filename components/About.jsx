@@ -3,7 +3,7 @@ import { FaCircle } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="bg-black w-full h-[800px] flex flex-row">
+    <div className="bg-black w-full h-[800px] flex flex-row min-h-screen">
       <div className="w-1/4 justify-center items-center flex">
         <div className="flex flex-row h-full">
           <div className="h-full w-[105px] flex justify-center items-center overflow-hidden">

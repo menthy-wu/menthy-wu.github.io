@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 const Landing = () => {
   return (
-    <div className="w-full bg-gray flex flex-col items-center h-[700px]">
+    <div className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen">
       <Nav />
       <div className="mt-6 w-full h-[105px] flex items-center overflow-hidden">
         <div className="top-0 translate-x-[150px] text-left font-anton text-10xl black-stroke whitespace-nowrap text-clip">
