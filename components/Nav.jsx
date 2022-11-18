@@ -1,5 +1,5 @@
 import React from "react";
-import { RiMenuFill } from "react-icons/ri";
+import MenuButton from "./MenuButton";
 
 const Nav = () => {
   return (
@@ -16,9 +16,7 @@ const Nav = () => {
       <div className="bg-nav rounded-full w-32 text-center font-abril p-2 text-xl">
         Contacts
       </div>
-      <div className="bg-nav rounded-full h-full aspect-square items-center justify-center flex font-abril p-2 text-xl">
-        <RiMenuFill/>
-      </div>
+      <MenuButton/>
     </div>
   );
 };

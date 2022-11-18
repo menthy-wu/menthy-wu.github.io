@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      rotate: {
+        '270': '270deg',
+      },
       colors: {
         nav: "#D9D9D9",
         gray: "#ECECEC",
