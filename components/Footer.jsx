@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex h-24 w-full items-center justify-center border-t">
+    <footer className="bg-gray flex h-24 w-full items-center justify-evenly border-t">
       <a target="_blank" rel="noreferrer" href="mailto:wumengxuan0728@gmail.com">
         <FaRegEnvelope className="text-6xl" />
       </a>
