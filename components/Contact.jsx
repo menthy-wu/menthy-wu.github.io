@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between">
+    <section id="contacts" className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between">
       <div className="w-1/2 flex justify-evenly items-center ">
         <div className="ml-3 w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="font-anton text-12xl text-white">CONTACT</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

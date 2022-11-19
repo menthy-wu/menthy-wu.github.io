@@ -5,8 +5,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div className="bg-black w-full justify-center flex min-h-screen">
-      \
+    <section id="projects" className="bg-black w-full justify-center flex min-h-screen">
       <div className="w-10/12 flex flex-col items-center">
         <div className="text-left font-anton text-10xl text-white w-full">
           Projects •
@@ -44,7 +43,7 @@ const Projects = () => {
           <FaCircle className="text-white mt-4 opacity-20" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Projects;

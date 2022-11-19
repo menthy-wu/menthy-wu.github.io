@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 const Landing = () => {
   return (
-    <div className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen">
+    <section id="landing" className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen">
       <Nav />
       <div className="mt-6 w-full h-[105px] flex items-center overflow-hidden">
         <div className="top-0 translate-x-[150px] text-left font-anton text-10xl black-stroke whitespace-nowrap text-clip">
@@ -42,17 +42,14 @@ const Landing = () => {
         </div>
       </div>
       <div className="m-0 mt-3 w-full flex justify-end">
-        <div className="mx-20 w-[300px] h-[1px] bg-black absolute"></div>
-        <div className="relative">
-          <div className="w-[1px] h-[150px] bg-black absolute left-[310px] top-[-10px]"></div>
-        </div>
+        <div className="h-[1px] w-[300px] bg-black"></div>
         <div className="mx-24 font-abril text-sm text-black w-1/6 text-right">
           This is jsut some random text. I just feel like it looks better if
           there is something. You can read it if you want, but it is just non
           sense. Also, if you read it in insector, you are a loser.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Landing;
