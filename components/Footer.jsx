@@ -9,13 +9,19 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray flex h-24 w-full items-center justify-evenly border-t">
-      <a target="_blank" rel="noreferrer" href="mailto:wumengxuan0728@gmail.com">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="mailto:wumengxuan0728@gmail.com"
+        className="text-black hover:scale-105 hover:text-black"
+      >
         <FaRegEnvelope className="text-6xl" />
       </a>
       <a
         target="_blank"
         rel="noreferrer"
         href="https://www.instagram.com/wmx_owo/"
+        className="text-black hover:scale-105 hover:text-black"
       >
         <FaInstagram className="text-6xl" />
       </a>
@@ -23,10 +29,16 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
         href="https://www.linkedin.com/in/mengxuan-wu/"
+        className="text-black hover:scale-105 hover:text-black"
       >
         <FaLinkedin className="text-6xl" />
       </a>
-      <a target="_blank" rel="noreferrer" href="https://github.com/menthy-wu">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/menthy-wu"
+        className="text-black hover:scale-105 hover:text-black"
+      >
         <FaGithub className="text-6xl" />
       </a>
     </footer>
