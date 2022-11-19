@@ -17,3 +17,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+.link {
+  color: rgba(255,255,255,1);
+  -webkit-text-stroke: 1px white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.link:hover {
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 1px white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
