@@ -2,13 +2,13 @@ import React from "react";
 import Nav from "./Nav";
 // import { Controller, Scene } from "react-scrollmagic";
 
-const Landing = () => {
+const Landing = ({setToHover,setToDefault}) => {
   return (
     <section
       id="landing"
       className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen"
     >
-      <Nav />
+      <Nav setToHover={setToHover} setToDefault={setToDefault}/>
       <div className="mt-6 w-full h-[105px] flex items-center overflow-hidden">
         <div className="top-0 translate-x-[150px] text-left font-anton text-10xl black-stroke whitespace-nowrap text-clip">
           - THIS IS MENTHY WU -

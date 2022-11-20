@@ -6,8 +6,12 @@ import About from "../components/About"
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Cursor from '../components/Cursor'
+import { useState } from 'react';
 
 export default function Home() {
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const setToHover = () => { setCursorVariant("hover"); }
+  const setToDefault = () => setCursorVariant("default");
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2 w-full">
 
@@ -19,14 +23,14 @@ export default function Home() {
 
       <main className="flex w-full flex-col items-center justify-center text-center">
 
-        <Landing />
+        <Landing setToHover={setToHover} setToDefault={setToDefault}/>
         <About />
         <Projects />
-        <Contact />
+        <Contact setToHover={setToHover} setToDefault={setToDefault}/>
       </main>
 
-      <Footer />
-      <Cursor />
+      <Footer setToHover={setToHover} setToDefault={setToDefault}/>
+      <Cursor cursorVariant={cursorVariant} />
     </div>
   )
 }

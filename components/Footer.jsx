@@ -6,10 +6,12 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ setToHover, setToDefault }) => {
   return (
     <footer className="bg-gray flex h-24 w-full items-center justify-evenly border-t">
       <a
+        onMouseEnter={setToHover}
+        onMouseLeave={setToDefault}
         target="_blank"
         rel="noreferrer"
         href="mailto:wumengxuan0728@gmail.com"
@@ -18,6 +20,8 @@ const Footer = () => {
         <FaRegEnvelope className="text-6xl" />
       </a>
       <a
+        onMouseEnter={setToHover}
+        onMouseLeave={setToDefault}
         target="_blank"
         rel="noreferrer"
         href="https://www.instagram.com/wmx_owo/"
@@ -26,6 +30,8 @@ const Footer = () => {
         <FaInstagram className="text-6xl" />
       </a>
       <a
+        onMouseEnter={setToHover}
+        onMouseLeave={setToDefault}
         target="_blank"
         rel="noreferrer"
         href="https://www.linkedin.com/in/mengxuan-wu/"
@@ -34,6 +40,8 @@ const Footer = () => {
         <FaLinkedin className="text-6xl" />
       </a>
       <a
+        onMouseEnter={setToHover}
+        onMouseLeave={setToDefault}
         target="_blank"
         rel="noreferrer"
         href="https://github.com/menthy-wu"

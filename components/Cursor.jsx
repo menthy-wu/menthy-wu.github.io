@@ -1,93 +1,47 @@
-import { userAgent } from "next/server";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
-const Cursor = ()=>
-{
-    const dot = useRef(null);
-    const cursorVisible = useRef(true);
-    const cursorEnlarged = useRef(true);
+const Cursor = ({cursorVariant}) => {
+    const [mousePosition, setMousePosition] = useState({
+        x: 0,
+        y: 0
+    });
 
-    const requestRef = useRef(null);
-    const endX = useRef(global.innerWidth/2);
-    const endY = useRef(global.innerHeight/2);
 
-    useEffect(()=>
-    {
-        document.addEventListener("mousedown", mosueDownEvent);
-        document.addEventListener("mouseup", mosueUpEvent);
-        document.addEventListener("mousemove", mosueMoveEvent);
-        document.addEventListener("mouseenter", mosueEnterEvent);
-        document.addEventListener("mouseleave", mosueLeaveEvent);
-
-        return() =>
-        {
-            document.removeEventListener("mousedown", mosueDownEvent);
-            document.removeEventListener("mouseup", mosueUpEvent);
-            document.removeEventListener("mousemove", mosueMoveEvent);
-            document.removeEventListener("mouseenter", mosueEnterEvent);
-            document.removeEventListener("mouseleave", mosueLeaveEvent);
-
-            cancelAnimationFrame(requestRef.current);
+    useEffect(() => {
+        const mouseMove = e => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            })
         }
-    },[])
-    const toggleCursorVisibility = () =>
-    {
-        if(cursorVisible.current)
-        {
-            dot.current.style.opacity = 1;
 
-        }
-        else
-        {
-            dot.current.style.opacity = 0;
-        }
-    }
-    const toggleCursorSize = ()=>
-    {
-        if(cursorEnlarged.current)
-        {
-            dot.current.style.transform = "translate(-50%, -50%) scale(1.5)";
+        window.addEventListener("mousemove", mouseMove);
 
+        return () => {
+            window.removeEventListener("mousemove", mouseMove);
         }
-        else
+    }, []);
+    const variants = {
+        default: {
+            x: mousePosition.x - 10,
+            y: mousePosition.y - 10,
+        },
+        hover:
         {
-            dot.current.style.transform = "translate(-50%, -50%) scale(1)";
+            height: 50,
+            width: 50,
+            x: mousePosition.x - 25,
+            y: mousePosition.y - 25
         }
     }
 
-    const mosueDownEvent = ()=>
-    {
 
-    }
-    const mosueUpEvent = ()=>
-    {
-
-    }
-    const mosueEnterEvent = ()=>
-    {
-        console.log("enter");
-        toggleCursorSize();
-    }
-    const mosueLeaveEvent = ()=>
-    {
-        toggleCursorSize();
-
-    }
-    const mosueMoveEvent = e =>
-    {
-        cursorVisible.current = true;
-        toggleCursorVisibility();
-
-        endX.current = e.pageX;
-        endY.current = e.screenY-65;
-
-        dot.current.style.top = endY.current+"px";
-        dot.current.style.left = endX.current+"px";
-    }
-
-
-
-    return(<div ref={dot} className = "cursor-dot"/>)
+    return (<motion.div
+        className='cursor'
+        variants={variants}
+        animate={cursorVariant}
+    />)
 }
 
 export default Cursor;

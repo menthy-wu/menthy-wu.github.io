@@ -1,12 +1,14 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ setToHover, setToDefault }) => {
   return (
     <section id="contacts" className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between">
       <div className="w-1/2 flex justify-evenly items-center ">
         <div className="ml-3 w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
+            onMouseEnter={setToHover}
+            onMouseLeave={setToDefault}
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/wmx_owo/"
@@ -18,6 +20,8 @@ const Contact = () => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
+            onMouseEnter={setToHover}
+            onMouseLeave={setToDefault}
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/mengxuan-wu/"
@@ -29,6 +33,8 @@ const Contact = () => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
+            onMouseEnter={setToHover}
+            onMouseLeave={setToDefault}
             target="_blank"
             rel="noreferrer"
             href="https://github.com/menthy-wu"
@@ -40,6 +46,8 @@ const Contact = () => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
+            onMouseEnter={setToHover}
+            onMouseLeave={setToDefault}
             target="_blank"
             rel="noreferrer"
             href="mailto:wumengxuan0728@gmail.com"
