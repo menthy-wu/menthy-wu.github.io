@@ -21,14 +21,14 @@ const About = () => {
               <FaCircle className="text-white"/>
               <hr className="ml-[-3px] bg-white h-[2px] w-full"/>
             </div>
-            <div className="font-quicksand text-white text-3xl w-2/3 text-right">
+            <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
               Lorem ipsum dolor sit amet, conse
               ctetur adipiscing elit, sed do eiusmo
               d tempor incididunt ut labore et dolore magna  laborum.
             </div>
           </div>
           <div className="flex flex-col items-end mt-6">
-            <div className="font-quicksand text-white text-3xl w-2/3 text-left">
+            <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
               Lorem ipsum dolor sit amet, conse
               ctetur adipiscing elit, sed do eiusmo
               d tempor incididunt ut labore et dolore magna  laborum.

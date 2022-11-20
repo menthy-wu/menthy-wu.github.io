@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" className="bg-black w-full justify-center flex min-h-screen">
       <div className="w-10/12 flex flex-col items-center">
-        <div className="text-left font-anton text-10xl text-white w-full">
+        <div className="text-left font-anton text-6xl md:text-10xl text-white w-full">
           Projects •
         </div>
         <div className="w-11/12 flex flex-col justify-center">
