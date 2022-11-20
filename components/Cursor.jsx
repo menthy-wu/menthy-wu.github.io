@@ -65,10 +65,12 @@ const Cursor = ()=>
     }
     const mosueEnterEvent = ()=>
     {
-
+        console.log("enter");
+        toggleCursorSize();
     }
     const mosueLeaveEvent = ()=>
     {
+        toggleCursorSize();
 
     }
     const mosueMoveEvent = e =>
@@ -77,7 +79,7 @@ const Cursor = ()=>
         toggleCursorVisibility();
 
         endX.current = e.pageX;
-        endY.current = e.pageY;
+        endY.current = e.screenY-65;
 
         dot.current.style.top = endY.current+"px";
         dot.current.style.left = endX.current+"px";

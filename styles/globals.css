@@ -9,15 +9,15 @@
 .cursor-dot
 {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   opacity: 1;
   transition: opacity .3s ease-in-out, transform .3s ease-in-out;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   backdrop-filter: invert(100%)
 }
 .black-stroke {
