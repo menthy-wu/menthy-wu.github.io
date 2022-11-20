@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
   cursor:none;
-}
+} */
 .cursor {
   backdrop-filter: invert(100%);
   height: 20px;
@@ -15,6 +15,7 @@
   left: 0;
   pointer-events: none;
 }
+
 .black-stroke {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 2px black;
@@ -24,21 +25,23 @@
 }
 
 .white-stroke {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 .link {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   -webkit-text-stroke: 1px white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 .link:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
