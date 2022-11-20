@@ -17,9 +17,9 @@ const About = () => {
       <div className="w-3/4 justify-center items-center flex">
         <div className="w-2/3">
           <div className="flex flex-col items-start">
-            <div className="flex items-center">
+            <div className="flex items-center w-full">
               <FaCircle className="text-white"/>
-              <hr className="ml-[-3px] bg-white h-[2px] w-[500px]"/>
+              <hr className="ml-[-3px] bg-white h-[2px] w-full"/>
             </div>
             <div className="font-quicksand text-white text-3xl w-2/3 text-right">
               Lorem ipsum dolor sit amet, conse

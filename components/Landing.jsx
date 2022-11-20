@@ -28,7 +28,7 @@ const Landing = ({setToHover,setToDefault}) => {
       </div>
 
       <div className="m-0 w-full h-[105px] flex items-center overflow-hidden">
-        <div className="font-anton translate-x-[-70px] text-10xl text-black whitespace-nowrap text-clip overflow-hidden">
+        <div className="font-anton translate-x-[-70px] text-10xl text-black whitespace-nowrap text-clip">
           Computer Science at UCR
         </div>
       </div>
