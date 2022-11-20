@@ -6,16 +6,10 @@ const Cursor = ()=>
     const dot = useRef(null);
     const cursorVisible = useRef(true);
     const cursorEnlarged = useRef(true);
-    const endX = useRef(null);
-    const endY = useRef(null);
-    if (typeof window !== 'undefined') {
-        endX.current = useRef(window.innerHeight/2);
-        endY.current = useRef(window.innerHeight/2);
-      }
-    const _x = useRef(0);
-    const _y = useRef(0);
 
     const requestRef = useRef(null);
+    const endX = useRef(global.innerWidth/2);
+    const endY = useRef(global.innerHeight/2);
 
     useEffect(()=>
     {
