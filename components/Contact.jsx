@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ({ setToHover, setToDefault }) => {
   return (
-    <section id="contacts" className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between">
+    <section id="contacts" className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between  sticky top-0">
       <div className="w-1/2 flex justify-evenly items-center md:text-10xl text-4xl">
         <div className="ml-3 w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">

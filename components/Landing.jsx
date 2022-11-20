@@ -7,7 +7,7 @@ const Landing = ({ setToHover, setToDefault }) => {
   return (
     <section
       id="landing"
-      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen"
+      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen sticky top-0"
     >
       <Nav setToHover={setToHover} setToDefault={setToDefault} />
       <div className="h-12" />
@@ -16,7 +16,7 @@ const Landing = ({ setToHover, setToDefault }) => {
         there is something. You can read it if you want, but it is just nonsense. Also, if you read it in inspector, you are a loser.  </RollingText>
       <RollingText wrapper="w-full md:h-[105px]" font="text-left font-anton text-5xl md:text-10xl text-black" baseVelocity={-3}> - MENTHY WU  </RollingText>
       <div className="m-0 w-full md:h-[105px] flex items-center overflow-hidden">
-        <div className="font-anton translate-x-[30px] md:translate-x-[300px] text-5xl md:text-10xl text-black whitespace-nowrap text-clip overflow-hidden w-full">
+        <div className="font-anton translate-x-[20px] md:translate-x-[300px] text-5xl md:text-10xl text-black whitespace-nowrap text-clip overflow-hidden w-full">
           • ASPIRING BILLIONAIRE
         </div>
       </div>
