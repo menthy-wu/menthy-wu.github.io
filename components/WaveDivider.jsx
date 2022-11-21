@@ -14,7 +14,7 @@ const WaveDivider = () => {
     const { scrollY } = useScroll();
     const variants = {
         default: {
-            height: 500 * (1 - scrollPos / 1000)
+            height: 600 * (1 - scrollPos / 1000)
         },
     }
 
