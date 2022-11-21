@@ -26,6 +26,10 @@ const Cursor = ({cursorVariant}) => {
         default: {
             x: mousePosition.x - 10,
             y: mousePosition.y - 10,
+            transition: {
+              type: "spring",
+              mass: 0.6
+            }
         },
         hover:
         {
