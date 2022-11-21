@@ -47,3 +47,24 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+.custom-shape-divider-bottom-1668987006 {
+  position: sticky;
+  top:0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1668987006 svg {
+  position: sticky;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-bottom-1668987006 .shape-fill {
+  fill: #000000;
+}
