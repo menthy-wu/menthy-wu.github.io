@@ -8,20 +8,16 @@ const AnimatedText = ({ text, font, animation }) => {
       x: 0,
       y: 0,
       transition: {
-        type: "Tween",
+        type: "spring",
         damping: 12,
-        stiffness: 100,
+        stiffness: 200,
+        duration: 1,
       },
     },
     hidden: {
       opacity: 0,
       x: -100,
-      y: 10,
-      transition: {
-        type: "Tween",
-        damping: 12,
-        stiffness: 100,
-      },
+      y: 0
     },
   };
   return (
