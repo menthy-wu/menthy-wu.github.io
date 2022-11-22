@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Cursor from "../components/Cursor";
 import { useState } from "react";
+import WaveDivider from "../components/WaveDivider";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -23,7 +24,10 @@ export default function Home() {
 
       <main className="flex w-full flex-col items-center justify-center text-center">
         <Landing setCursorVariant={setCursorVariant} />
-        <About />
+        <div className="w-full sticky top-0">
+          <WaveDivider />
+          <About />
+        </div>
         <Projects />
         <Contact setCursorVariant={setCursorVariant} />
       </main>

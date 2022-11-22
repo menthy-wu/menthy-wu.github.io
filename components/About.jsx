@@ -1,11 +1,10 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa";
-import WaveDivider from '../components/WaveDivider';
+
 
 const About = () => {
   return (
-    <section id="about" className=" w-full flex flex-col min-h-screen mb-[400px] sticky top-0 items-start justify-start">
-      <WaveDivider />
+    <section id="about" className=" w-full flex flex-col min-h-screen mb-[400px] items-start justify-start">
       <div className="bg-black w-full m-0 p-0 flex flex-row min-h-screen">
         <div className="w-1/4 justify-center items-center flex ">
           <div className="flex flex-row h-full">
