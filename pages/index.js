@@ -1,20 +1,17 @@
 import Head from "next/head";
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import Landing from "../components/Landing";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Cursor from "../components/Cursor";
-import { useState } from "react";
 import WaveDivider from "../components/WaveDivider";
 import MenuButton from "../components/MenuButton";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
-  useEffect(() => {
-    console.log(cursorVariant);
-  }, [cursorVariant]);
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2 w-full">
       <Head>
@@ -24,7 +21,6 @@ export default function Home() {
       </Head>
 
       <main className="flex w-full flex-col items-center justify-center text-center">
-
         <MenuButton setCursorVariant={setCursorVariant} />
         <Landing setCursorVariant={setCursorVariant} />
         <div className="w-full z-10">
