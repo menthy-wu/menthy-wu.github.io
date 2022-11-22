@@ -1,28 +1,95 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = ({ setCursorVariant }) => {
+  const flyIn = {
+    first: {
+      rotate:270,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+        duration: .3,
+        delay: 0.1,
+      },
+    },
+    second: {
+      rotate:270,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+        duration: .6,
+        delay: 0.2,
+      },
+    },
+    third: {
+      rotate:270,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+        duration: .9,
+        delay: 0.3,
+      },
+    },
+    fourth: {
+      rotate:270,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+        duration: 1.2,
+        delay: 0.4,
+      },
+    },
+    hidden: {
+      rotate:270,
+      opacity: 0,
+      x: -100,
+      y: 0
+    },
+  };
   return (
     <section
       id="contacts"
       className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between  sticky top-0"
     >
-      <div className="w-1/2 flex justify-evenly items-center md:text-10xl text-4xl">
-        <div className="ml-3 w-[1px] h-full bg-white"></div>
-        <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
-          <a
+      <div className="ml-10 w-1/2 flex justify-start items-center md:text-10xl text-4xl">
+        <div className="ml-3 mr-0 w-[1px] h-full bg-white p-0"></div>
+        <div className="h-full w-[130px] flex justify-center items-center overflow-hidden m-0 p-0">
+          <motion.a
+            variants={flyIn}
+            whileInView="first"
+            initial="hidden"
             onMouseEnter={() => setCursorVariant("hover")}
             onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/wmx_owo/"
-            className="rotate-270 whitespace-nowrap font-anton link hover:no-underline"
+            className="whitespace-nowrap font-anton link hover:no-underline m-0"
           >
             Instagram
-          </a>
+          </motion.a>
         </div>
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
-          <a
+          <motion.a
+            variants={flyIn}
+            whileInView="second"
+            initial="hidden"
             onMouseEnter={() => setCursorVariant("hover")}
             onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
@@ -31,11 +98,14 @@ const Contact = ({ setCursorVariant }) => {
             className="rotate-270 whitespace-nowrap font-anton link hover:no-underline"
           >
             LinkedIn
-          </a>
+          </motion.a>
         </div>
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
-          <a
+          <motion.a
+            variants={flyIn}
+            whileInView="third"
+            initial="hidden"
             onMouseEnter={() => setCursorVariant("hover")}
             onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
@@ -44,11 +114,14 @@ const Contact = ({ setCursorVariant }) => {
             className="rotate-270 whitespace-nowrap font-anton link hover:no-underline"
           >
             GitHub
-          </a>
+          </motion.a>
         </div>
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
-          <a
+          <motion.a
+            variants={flyIn}
+            whileInView="fourth"
+            initial="hidden"
             onMouseEnter={() => setCursorVariant("hover")}
             onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
@@ -57,7 +130,7 @@ const Contact = ({ setCursorVariant }) => {
             className="rotate-270 whitespace-nowrap font-anton link hover:no-underline"
           >
             Email
-          </a>
+          </motion.a>
         </div>
       </div>
       <div className="whitespace-nowrap font-abril w-1/2 flex flex-col justify-center items-center overflow-hidden text-6xl md:text-12xl">
