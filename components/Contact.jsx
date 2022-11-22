@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import RollingContacts from "./RollingContacts";
 
 const Contact = ({ setCursorVariant }) => {
   const flyIn = {
@@ -133,7 +134,8 @@ const Contact = ({ setCursorVariant }) => {
           </motion.a>
         </div>
       </div>
-      <div className="whitespace-nowrap font-abril w-1/2 flex flex-col justify-center items-center overflow-hidden text-6xl md:text-12xl">
+      <RollingContacts  baseVelocity={10} font="text-6xl md:text-12xl font-anton text-white" wrapper=" w-1/2 flex flex-col justify-center items-center"/>
+      {/* <div className="whitespace-nowrap font-abril w-1/2 flex flex-col justify-center items-center overflow-hidden text-6xl md:text-12xl">
         <div className="h-[105px]">
           <div className="font-anton white-stroke">CONTACT</div>
         </div>
@@ -169,7 +171,7 @@ const Contact = ({ setCursorVariant }) => {
         <div className="h-[105px]">
           <div className="font-anton text-white">CONTACT</div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

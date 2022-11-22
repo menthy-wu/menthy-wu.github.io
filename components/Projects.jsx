@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-black w-full justify-center flex min-h-screen z-10"
+      className="bg-black w-full justify-center flex min-h-screen z-10 pb-32"
     >
       <div className=" w-10/12 flex flex-col items-center">
         <AnimatedText
