@@ -46,7 +46,7 @@ const Cursor = ({ cursorVariant }) => {
 
   return (
     <motion.div
-      className="cursor"
+      className="cursor z-50"
       variants={variants}
       animate={cursorVariant}
     />

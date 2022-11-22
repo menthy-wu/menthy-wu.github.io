@@ -2,6 +2,7 @@ import React from "react";
 import { FaCircle } from "react-icons/fa";
 import { Col, Row, Container } from "react-bootstrap";
 import Project from "./Project";
+import AnimatedText from "./AnimatedText";
 
 const Projects = () => {
   return (
@@ -10,9 +11,11 @@ const Projects = () => {
       className="bg-black w-full justify-center flex min-h-screen z-10"
     >
       <div className=" w-10/12 flex flex-col items-center">
-        <div className="my-[200px] text-left font-anton text-6xl md:text-10xl text-white w-full">
-          Projects •
-        </div>
+        <AnimatedText
+          text="Projects •"
+          font="my-[200px] text-left font-anton text-6xl md:text-10xl text-white w-full"
+          animation="flyIn"
+        />
         <div className="w-11/12 flex flex-col justify-center">
           <Row className="items-center justify-between mt-16">
             <Col md={4}>
