@@ -1,14 +1,17 @@
 import React from "react";
 
-const Contact = ({ setToHover, setToDefault }) => {
+const Contact = ({ setCursorVariant }) => {
   return (
-    <section id="contacts" className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between  sticky top-0">
+    <section
+      id="contacts"
+      className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between  sticky top-0"
+    >
       <div className="w-1/2 flex justify-evenly items-center md:text-10xl text-4xl">
         <div className="ml-3 w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
-            onMouseEnter={setToHover}
-            onMouseLeave={setToDefault}
+            onMouseEnter={() => setCursorVariant("hover")}
+            onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/wmx_owo/"
@@ -20,8 +23,8 @@ const Contact = ({ setToHover, setToDefault }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
-            onMouseEnter={setToHover}
-            onMouseLeave={setToDefault}
+            onMouseEnter={() => setCursorVariant("hover")}
+            onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/mengxuan-wu/"
@@ -33,8 +36,8 @@ const Contact = ({ setToHover, setToDefault }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
-            onMouseEnter={setToHover}
-            onMouseLeave={setToDefault}
+            onMouseEnter={() => setCursorVariant("hover")}
+            onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
             rel="noreferrer"
             href="https://github.com/menthy-wu"
@@ -46,8 +49,8 @@ const Contact = ({ setToHover, setToDefault }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <a
-            onMouseEnter={setToHover}
-            onMouseLeave={setToDefault}
+            onMouseEnter={() => setCursorVariant("hover")}
+            onMouseLeave={() => setCursorVariant("default")}
             target="_blank"
             rel="noreferrer"
             href="mailto:wumengxuan0728@gmail.com"

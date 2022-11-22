@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-
 import {
   FaRegEnvelope,
   FaInstagram,
@@ -9,12 +8,12 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-const Footer = ({ setToHover, setToDefault }) => {
+const Footer = ({ setCursorVariant }) => {
   return (
     <footer className="bg-gray flex h-24 w-full items-center justify-evenly border-t">
       <motion.a
-        onMouseEnter={setToHover}
-        onMouseLeave={setToDefault}
+        onMouseEnter={() => setCursorVariant("hover")}
+        onMouseLeave={() => setCursorVariant("default")}
         whileHover={{ scale: 1.2 }}
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
@@ -25,8 +24,8 @@ const Footer = ({ setToHover, setToDefault }) => {
         <FaRegEnvelope className="text-6xl" />
       </motion.a>
       <motion.a
-        onMouseEnter={setToHover}
-        onMouseLeave={setToDefault}
+        onMouseEnter={() => setCursorVariant("hover")}
+        onMouseLeave={() => setCursorVariant("default")}
         whileHover={{ scale: 1.2 }}
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
@@ -37,8 +36,8 @@ const Footer = ({ setToHover, setToDefault }) => {
         <FaInstagram className="text-6xl" />
       </motion.a>
       <motion.a
-        onMouseEnter={setToHover}
-        onMouseLeave={setToDefault}
+        onMouseEnter={() => setCursorVariant("hover")}
+        onMouseLeave={() => setCursorVariant("default")}
         whileHover={{ scale: 1.2 }}
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
@@ -49,8 +48,8 @@ const Footer = ({ setToHover, setToDefault }) => {
         <FaLinkedin className="text-6xl" />
       </motion.a>
       <motion.a
-        onMouseEnter={setToHover}
-        onMouseLeave={setToDefault}
+        onMouseEnter={() => setCursorVariant("hover")}
+        onMouseLeave={() => setCursorVariant("default")}
         whileHover={{ scale: 1.2 }}
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"

@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *{
+*{
   cursor:none;
-} */
+}
 .cursor {
   backdrop-filter: invert(100%);
   height: 20px;

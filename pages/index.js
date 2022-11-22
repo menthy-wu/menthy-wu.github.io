@@ -1,20 +1,20 @@
-import Head from 'next/head'
-import React from 'react'
-import Landing from '../components/Landing';
-import Footer from '../components/Footer';
-import About from "../components/About"
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import Cursor from '../components/Cursor'
-import { useState } from 'react';
+import Head from "next/head";
+import React, { useEffect } from "react";
+import Landing from "../components/Landing";
+import Footer from "../components/Footer";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Cursor from "../components/Cursor";
+import { useState } from "react";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
-  const setToHover = () => { setCursorVariant("hover"); }
-  const setToDefault = () => setCursorVariant("default");
+  useEffect(() => {
+    console.log(cursorVariant);
+  }, [cursorVariant]);
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2 w-full">
-
       <Head>
         <title>Menthy Wu</title>
         <meta name="description" content="Menthy Wu's personal website" />
@@ -22,15 +22,14 @@ export default function Home() {
       </Head>
 
       <main className="flex w-full flex-col items-center justify-center text-center">
-
-        <Landing setToHover={setToHover} setToDefault={setToDefault}/>
+        <Landing setCursorVariant={setCursorVariant} />
         <About />
         <Projects />
-        <Contact setToHover={setToHover} setToDefault={setToDefault}/>
+        <Contact setCursorVariant={setCursorVariant} />
       </main>
 
-      <Footer setToHover={setToHover} setToDefault={setToDefault}/>
+      <Footer setCursorVariant={setCursorVariant} />
       <Cursor cursorVariant={cursorVariant} />
     </div>
-  )
+  );
 }
