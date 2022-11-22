@@ -49,7 +49,7 @@ const Cursor = ({ cursorVariant }) => {
       className="cursor z-50"
       variants={variants}
       animate={cursorVariant}
-    />
+    ></motion.div>
   );
 };
 
