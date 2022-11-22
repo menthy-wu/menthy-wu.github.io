@@ -26,7 +26,7 @@ const Nav = ({ setCursorVariant }) => {
         setCursorVariant={setCursorVariant}
         link="/#contacts"
       />
-      <MenuButton />
+      <div className = ""/>
     </div>
   );
 };
