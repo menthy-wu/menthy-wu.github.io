@@ -7,7 +7,7 @@ const Landing = ({ setCursorVariant }) => {
   return (
     <section
       id="landing"
-      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen sticky top-0 mb-32"
+      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen sticky z-0 top-0 mb-32"
     >
       <Nav setCursorVariant={setCursorVariant} />
       <div className="h-12" />
@@ -16,18 +16,16 @@ const Landing = ({ setCursorVariant }) => {
         font="text-left font-anton text-5xl md:text-10xl black-stroke"
         baseVelocity={3}
       >
-        {" "}
-        - THIS IS MENTHY WU{" "}
+        - THIS IS MENTHY WU
       </RollingText>
       <RollingText
         wrapper="m-0 w-full md:h-[10px]"
         font="font-abril text-xs text-black"
         baseVelocity={1}
       >
-        {" "}
         This is jsut some random text. I just feel like it looks better if there
         is something. You can read it if you want, but it is just nonsense.
-        Also, if you read it in inspector, you are a loser.{" "}
+        Also, if you read it in inspector, you are a loser.
       </RollingText>
       <RollingText
         wrapper="w-full md:h-[105px]"

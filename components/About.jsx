@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" w-full flex flex-col min-h-screen mb-[400px] items-start justify-start"
+      className=" w-full flex flex-col min-h-screen items-start justify-start"
     >
       <div className="bg-black w-full m-0 p-0 flex flex-row min-h-screen">
         <div className="w-1/4 justify-center items-center flex ">

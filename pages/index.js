@@ -24,7 +24,7 @@ export default function Home() {
 
       <main className="flex w-full flex-col items-center justify-center text-center">
         <Landing setCursorVariant={setCursorVariant} />
-        <div className="w-full sticky top-0">
+        <div className="w-full z-10">
           <WaveDivider />
           <About />
         </div>
