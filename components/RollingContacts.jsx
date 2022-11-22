@@ -48,6 +48,17 @@ const RollingContacts = ({ baseVelocity, font, wrapper }) => {
         <div>Contacts </div>
         <div className="white-stroke">Contacts </div>
         <div>Contacts </div>
+        <div className="white-stroke">Contacts </div>
+        <div>Contacts </div>
+        <div className="white-stroke">Contacts </div>
+        <div>Contacts </div>
+        <div className="white-stroke">Contacts </div>
+        <div>Contacts </div>
+        <div className="white-stroke">Contacts </div>
+        <div>Contacts </div>
+        <div className="white-stroke">Contacts </div>
+        <div>Contacts </div>
+        
         
     </motion.div></div>)
 }
