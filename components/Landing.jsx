@@ -7,7 +7,7 @@ const Landing = ({ setCursorVariant }) => {
   return (
     <section
       id="landing"
-      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen sticky top-0"
+      className="w-full bg-gray flex flex-col items-center h-[700px] min-h-screen sticky top-0 mb-32"
     >
       <Nav setCursorVariant={setCursorVariant} />
       <div className="h-12" />
