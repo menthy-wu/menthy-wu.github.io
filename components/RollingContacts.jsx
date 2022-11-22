@@ -36,7 +36,7 @@ const RollingContacts = ({ baseVelocity, font, wrapper }) => {
 
         basY.set(basY.get() + moveBy);
     });
-    const y = useTransform(basY, (v) => `${wrap(-0, -10, v)}%`);
+    const y = useTransform(basY, (v) => `${wrap(-0, -20, v)}%`);
     return (<div className={`${wrapper} flex items-center overflow-hidden`}><motion.div className={`${font} whitespace-nowrap text-clip`} style={{ y }}>
         <div className="white-stroke">Contacts </div>
         <div>Contacts </div>
@@ -48,6 +48,7 @@ const RollingContacts = ({ baseVelocity, font, wrapper }) => {
         <div>Contacts </div>
         <div className="white-stroke">Contacts </div>
         <div>Contacts </div>
+        
     </motion.div></div>)
 }
 
