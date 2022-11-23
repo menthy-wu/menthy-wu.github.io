@@ -10,6 +10,7 @@ const Project = ({ item, i, setCursorVariant }) => {
   const [extended, setExtended] = useState(false);
   const toggle = () => {
     if (!extended) {
+      setCursorVariant("back");
       setExtended(true);
       setWidth(12);
     } else {
@@ -48,7 +49,7 @@ const Project = ({ item, i, setCursorVariant }) => {
           <FaCircle className="text-white" />
           <hr className="ml-[-3px] bg-white h-[2px] w-full" />
         </div>
-        <div className="flex flex-rol">
+        <div className="flex flex-row">
           <div
             className="flex flex-col justify-center items-end"
             onClick={toggle}
@@ -69,9 +70,9 @@ const Project = ({ item, i, setCursorVariant }) => {
               {item.discription}
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mx-10">
-            {extended &&
-              item.links.map((link, index) => {
+          {extended && (
+            <div className="flex flex-col justify-center items-center mx-10">
+              {item.links.map((link, index) => {
                 return (
                   <motion.a
                     key={index}
@@ -99,7 +100,8 @@ const Project = ({ item, i, setCursorVariant }) => {
                   </motion.a>
                 );
               })}
-          </div>
+            </div>
+          )}
           {extended && (
             <div className="flex flex-row justify-center items-center w-full">
               <Carousel className="justify-center items-center">

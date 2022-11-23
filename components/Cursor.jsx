@@ -54,6 +54,12 @@ const Cursor = ({ cursorVariant }) => {
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
     },
+    more: {
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
+    },
   };
 
   return (
@@ -69,6 +75,10 @@ const Cursor = ({ cursorVariant }) => {
       ) : cursorVariant == "back" ? (
         <div className="font-poiret text-black text-xl text-center w-full rounded-full bg-gray h-full justify-center items-center flex">
           BACK
+        </div>
+      ) : cursorVariant == "more" ? (
+        <div className="font-poiret text-black text-xl text-center w-full rounded-full bg-gray h-full justify-center items-center flex">
+          MORE
         </div>
       ) : (
         <></>

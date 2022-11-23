@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { Col, Row, Container } from "react-bootstrap";
 import Project from "./Project";
 import AnimatedText from "./AnimatedText";
 import MoreDots from "./MoreDots";
 import ProjectsList from "./ProjectsData";
+import MoreProjectsList from "./MoreProjectsData";
 
 const Projects = ({ setCursorVariant }) => {
+  const [moreProjects, setMoreProjects] = useState(false);
   return (
     <section
       id="projects"
@@ -30,9 +32,25 @@ const Projects = ({ setCursorVariant }) => {
                 />
               );
             })}
+            {moreProjects &&
+              MoreProjectsList.map((item, index) => {
+                return (
+                  <Project
+                    setCursorVariant={setCursorVariant}
+                    item={item}
+                    key={index}
+                    i={index}
+                  />
+                );
+              })}
           </Row>
         </div>
-        <MoreDots />
+        {!moreProjects && (
+          <MoreDots
+            setCursorVariant={setCursorVariant}
+            setMoreProjects={setMoreProjects}
+          />
+        )}
       </div>
     </section>
   );
