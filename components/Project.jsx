@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Col } from "react-bootstrap";
+import Carousel from "framer-motion-carousel";
 
 const Project = ({ title, i, setCursorVariant }) => {
   const [width, setWidth] = useState(4);
@@ -35,14 +36,8 @@ const Project = ({ title, i, setCursorVariant }) => {
     },
   };
   return (
-    <Col onClick={toggle} className="flex flex-col" md={width}>
+    <Col className="flex flex-col" md={width}>
       <motion.div
-        onMouseEnter={() => {
-          extended ? setCursorVariant("back") : setCursorVariant("view");
-        }}
-        onMouseLeave={() => {
-          setCursorVariant("default");
-        }}
         variants={flyIn}
         initial="hidden"
         whileInView="visible"
@@ -53,7 +48,16 @@ const Project = ({ title, i, setCursorVariant }) => {
           <hr className="ml-[-3px] bg-white h-[2px] w-full" />
         </div>
         <div className="flex flex-rol">
-          <div className="flex flex-col justify-center items-end">
+          <div
+            className="flex flex-col justify-center items-end"
+            onClick={toggle}
+            onMouseLeave={() => {
+              setCursorVariant("default");
+            }}
+            onMouseEnter={() => {
+              extended ? setCursorVariant("back") : setCursorVariant("view");
+            }}
+          >
             <div className="text-white font-poiret text-3xl text-right">
               {title}
             </div>
@@ -66,10 +70,21 @@ const Project = ({ title, i, setCursorVariant }) => {
             </div>
           </div>
           {extended && (
-            <div className="flex flex-row">
-              <img className="h-full w-1/3" src="JungleDefense1.jpg"></img>
-              <img className="h-full w-1/3" src="JungleDefense2.png"></img>
-              <img className="h-full w-1/3" src="JungleDefense3.png"></img>
+            <div className="flex flex-row justify-center items-center">
+              <Carousel className="justify-center items-center ">
+                <img
+                  className="justify-center items-center pl-16"
+                  src="JungleDefense1.jpg"
+                ></img>
+                <img
+                  className="justify-center items-center pl-16"
+                  src="JungleDefense2.png"
+                ></img>
+                <img
+                  className="justify-center items-center pl-16"
+                  src="JungleDefense3.png"
+                ></img>
+              </Carousel>
             </div>
           )}
         </div>
