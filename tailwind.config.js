@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       rotate: {
-        '270': '270deg',
+        270: "270deg",
       },
       colors: {
         nav: "#D9D9D9",
@@ -18,6 +18,9 @@ module.exports = {
         abril: ["Abril Fatface", "cursive"],
         poiret: ["Poiret One", "cursive"],
         quicksand: ["Quicksand", "sans-serif"],
+      },
+      zIndex: {
+        100: "100",
       },
       fontSize: {
         sm: "0.8rem",

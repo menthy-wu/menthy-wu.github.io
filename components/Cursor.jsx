@@ -42,14 +42,38 @@ const Cursor = ({ cursorVariant }) => {
       x: mousePosition.x,
       y: mousePosition.y,
     },
+    view: {
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
+    },
+    back: {
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
+    },
   };
 
   return (
     <motion.div
-      className="cursor z-50"
+      className="cursor z-100 flex justify-center items-center"
       variants={variants}
       animate={cursorVariant}
-    ></motion.div>
+    >
+      {cursorVariant == "view" ? (
+        <div className="font-poiret text-black text-xl text-center w-full rounded-full bg-gray h-full justify-center items-center flex">
+          VIEW
+        </div>
+      ) : cursorVariant == "back" ? (
+        <div className="font-poiret text-black text-xl text-center w-full rounded-full bg-gray h-full justify-center items-center flex">
+          BACK
+        </div>
+      ) : (
+        <></>
+      )}
+    </motion.div>
   );
 };
 

@@ -5,7 +5,7 @@ import Project from "./Project";
 import AnimatedText from "./AnimatedText";
 import MoreDots from "./MoreDots";
 
-const Projects = () => {
+const Projects = ({ setCursorVariant }) => {
   return (
     <section
       id="projects"
@@ -18,31 +18,41 @@ const Projects = () => {
           animation="flyIn"
         />
         <div className="w-11/12 flex flex-col justify-center">
-          <Row className="items-center justify-between mt-16">
-            <Col md={4}>
-              <Project title="Jungle Defense" i={1} />
-            </Col>
-            <Col md={4}>
-              <Project title="Jungle Defense" i={2} />
-            </Col>
-            <Col md={4}>
-              <Project title="Jungle Defense" i={3} />
-            </Col>
-          </Row>
-          <Row className="items-center justify-between mt-16">
-            <Col md={4}>
-              <Project title="Jungle Defense" i={4} />
-            </Col>
-            <Col md={4}>
-              <Project title="Jungle Defense" i={5} />
-            </Col>
-            <Col md={4}>
-              <Project title="Jungle Defense" i={6} />
-            </Col>
+          <Row className="items-center justify-start mt-16">
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={1}
+            />
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={2}
+            />
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={3}
+            />
+
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={4}
+            />
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={5}
+            />
+            <Project
+              setCursorVariant={setCursorVariant}
+              title="Jungle Defense"
+              i={6}
+            />
           </Row>
         </div>
         <MoreDots />
-
       </div>
     </section>
   );

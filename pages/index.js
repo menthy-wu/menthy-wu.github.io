@@ -27,7 +27,7 @@ export default function Home() {
           <WaveDivider />
           <About />
         </div>
-        <Projects />
+        <Projects setCursorVariant={setCursorVariant}  />
         <Contact setCursorVariant={setCursorVariant} />
       </main>
 
