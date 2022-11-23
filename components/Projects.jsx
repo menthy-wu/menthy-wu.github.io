@@ -4,6 +4,7 @@ import { Col, Row, Container } from "react-bootstrap";
 import Project from "./Project";
 import AnimatedText from "./AnimatedText";
 import MoreDots from "./MoreDots";
+import ProjectsList from "./ProjectsData";
 
 const Projects = ({ setCursorVariant }) => {
   return (
@@ -19,37 +20,16 @@ const Projects = ({ setCursorVariant }) => {
         />
         <div className="w-11/12 flex flex-col justify-center">
           <Row className="items-center justify-start mt-16">
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={1}
-            />
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={2}
-            />
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={3}
-            />
-
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={4}
-            />
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={5}
-            />
-            <Project
-              setCursorVariant={setCursorVariant}
-              title="Jungle Defense"
-              i={6}
-            />
+            {ProjectsList.map((item, index) => {
+              return (
+                <Project
+                  setCursorVariant={setCursorVariant}
+                  item={item}
+                  key={index}
+                  i={index}
+                />
+              );
+            })}
           </Row>
         </div>
         <MoreDots />

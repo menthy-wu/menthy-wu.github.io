@@ -2,8 +2,10 @@ const ProjectsList = [
   {
     title: "Jungle Defense",
     tools: "Unity, C#, Photoshop",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "https://github.com/menthy-wu/JungleDefense" },
+      { type: "play", link: "https://wmx-owo.itch.io/jungle-defense" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -15,8 +17,10 @@ const ProjectsList = [
   {
     title: "Cutie Saves the World",
     tools: "Unity, C#, Photoshop",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "" },
+      { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -30,8 +34,10 @@ const ProjectsList = [
   {
     title: "The Seasoning of Life",
     tools: "Unity, C#, Photoshop",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "" },
+      { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -45,8 +51,10 @@ const ProjectsList = [
   {
     title: "Little Zombie’s Spring",
     tools: "python, pygame, Photoshop",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "" },
+      { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -60,8 +68,10 @@ const ProjectsList = [
   {
     title: "ACM Membership Portal",
     tools: "Next.js, Google Cloud Platform, Tailwind",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "" },
+      { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -75,8 +85,10 @@ const ProjectsList = [
   {
     title: "Rosehack 2023 Web",
     tools: "Next.js, Google Cloud Platform, Tailwind",
-    github: "",
-    playLink: "",
+    links: [
+      { type: "github", link: "" },
+      { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
+    ],
     discription:
       "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
     pictures: [
@@ -88,3 +100,5 @@ const ProjectsList = [
     ],
   },
 ];
+
+export default ProjectsList;

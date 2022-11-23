@@ -3,8 +3,9 @@ import { FaCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Col } from "react-bootstrap";
 import Carousel from "framer-motion-carousel";
+import { FaGithub, FaPlayCircle } from "react-icons/fa";
 
-const Project = ({ title, i, setCursorVariant }) => {
+const Project = ({ item, i, setCursorVariant }) => {
   const [width, setWidth] = useState(4);
   const [extended, setExtended] = useState(false);
   const toggle = () => {
@@ -59,31 +60,52 @@ const Project = ({ title, i, setCursorVariant }) => {
             }}
           >
             <div className="text-white font-poiret text-3xl text-right">
-              {title}
+              {item.title}
             </div>
             <div className="text-white font-anton text-sm text-right mt-4">
-              Unity, C#, Photoshop
+              {item.tools}
             </div>
             <div className="text-white text-base text-right w-10/12 font-quicksand">
-              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
-              eiusmo d tempor incididunt ut labore et dolore magna laborum.
+              {item.discription}
             </div>
           </div>
+          <div className="flex flex-col justify-center items-center mx-10">
+            {extended &&
+              item.links.map((link, index) => {
+                return (
+                  <motion.a
+                    key={index}
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    whileHover={{ scale: 1.2 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 500,
+                      delay: index * 0.2,
+                    }}
+                    onMouseEnter={() => setCursorVariant("hover")}
+                    onMouseLeave={() => setCursorVariant("default")}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={link.link}
+                    className="mb-2"
+                  >
+                    {link.type == "github" && (
+                      <FaGithub className="text-6xl text-gray" />
+                    )}
+                    {link.type == "play" && (
+                      <FaPlayCircle className="text-6xl text-gray mt-2" />
+                    )}
+                  </motion.a>
+                );
+              })}
+          </div>
           {extended && (
-            <div className="flex flex-row justify-center items-center">
-              <Carousel className="justify-center items-center ">
-                <img
-                  className="justify-center items-center pl-16"
-                  src="JungleDefense1.jpg"
-                ></img>
-                <img
-                  className="justify-center items-center pl-16"
-                  src="JungleDefense2.png"
-                ></img>
-                <img
-                  className="justify-center items-center pl-16"
-                  src="JungleDefense3.png"
-                ></img>
+            <div className="flex flex-row justify-center items-center w-full">
+              <Carousel className="justify-center items-center">
+                {item.pictures.map((picture, index) => {
+                  return <img key={index} src={picture} />;
+                })}
               </Carousel>
             </div>
           )}
