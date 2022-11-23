@@ -1,8 +1,10 @@
+import { motion, useScroll } from "framer-motion";
 import React from "react";
 import { FaCircle } from "react-icons/fa";
 import RollingText from "./RollingText";
 
 const About = () => {
+  const { scrollPos } = useScroll();
   return (
     <section
       id="about"
@@ -42,15 +44,27 @@ const About = () => {
                 <FaCircle className="text-white" />
                 <hr className="ml-[-3px] bg-white h-[2px] w-full" />
               </div>
-              <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
-                eiusmo d tempor incididunt ut labore et dolore magna laborum.
+              <div className="flex flex-row">
+                <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
+                  Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
+                  do eiusmo d tempor incididunt ut labore et dolore magna
+                  laborum.
+                </div>
+                <motion.img
+                  animate={{ x: scrollPos }}
+                  src="about1.jpg"
+                  className="w-1/3 pl-6"
+                />
               </div>
             </div>
             <div className="flex flex-col items-end mt-6">
-              <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
-                eiusmo d tempor incididunt ut labore et dolore magna laborum.
+              <div className="flex flex-row">
+                <img src="about5.jpg" className="w-1/3 pr-6" />
+                <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
+                  Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
+                  do eiusmo d tempor incididunt ut labore et dolore magna
+                  laborum.
+                </div>
               </div>
             </div>
           </div>
