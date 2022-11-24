@@ -76,7 +76,7 @@ const MenuButton = ({ setCursorVariant }) => {
       <motion.div
         variants={sidebar}
         animate={isOpen ? "open" : "closed"}
-        className="z-40 fixed right-0 top-0 "
+        className="z-40 fixed right-0 top-0 w-1/2"
       >
         <MenuPage toggleOpen={toggleOpen} setCursorVariant={setCursorVariant} />
       </motion.div>
@@ -84,7 +84,7 @@ const MenuButton = ({ setCursorVariant }) => {
         onClick={() => toggleOpen()}
         onMouseLeave={mouseLeave}
         onMouseMove={mouseMove}
-        className="fixed top-5 right-10 z-50 rounded-full h-15 w-15 items-center justify-center flex font-abril p-2 text-xl"
+        className="fixed top-5 right-10 z-50 rounded-full h-15 w-15 items-center justify-center flex "
       >
         <motion.div
           onMouseEnter={() => setCursorVariant("onMovingButton")}
