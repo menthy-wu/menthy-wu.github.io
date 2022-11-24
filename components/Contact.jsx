@@ -5,7 +5,7 @@ import RollingContacts from "./RollingContacts";
 const Contact = ({ setCursorVariant }) => {
   const flyIn = {
     first: {
-      rotate:270,
+      rotate: 270,
       opacity: 1,
       x: 0,
       y: 0,
@@ -13,12 +13,12 @@ const Contact = ({ setCursorVariant }) => {
         type: "spring",
         damping: 12,
         stiffness: 200,
-        duration: .3,
+        duration: 0.3,
         delay: 0.1,
       },
     },
     second: {
-      rotate:270,
+      rotate: 270,
       opacity: 1,
       x: 0,
       y: 0,
@@ -26,12 +26,12 @@ const Contact = ({ setCursorVariant }) => {
         type: "spring",
         damping: 12,
         stiffness: 200,
-        duration: .6,
+        duration: 0.6,
         delay: 0.2,
       },
     },
     third: {
-      rotate:270,
+      rotate: 270,
       opacity: 1,
       x: 0,
       y: 0,
@@ -39,12 +39,12 @@ const Contact = ({ setCursorVariant }) => {
         type: "spring",
         damping: 12,
         stiffness: 200,
-        duration: .9,
+        duration: 0.9,
         delay: 0.3,
       },
     },
     fourth: {
-      rotate:270,
+      rotate: 270,
       opacity: 1,
       x: 0,
       y: 0,
@@ -57,10 +57,10 @@ const Contact = ({ setCursorVariant }) => {
       },
     },
     hidden: {
-      rotate:270,
+      rotate: 270,
       opacity: 0,
       x: -100,
-      y: 0
+      y: 0,
     },
   };
   return (
@@ -72,6 +72,7 @@ const Contact = ({ setCursorVariant }) => {
         <div className="ml-3 mr-0 w-[1px] h-full bg-white p-0"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden m-0 p-0">
           <motion.a
+            whileHover={{ scale: 1.2 }}
             variants={flyIn}
             whileInView="first"
             initial="hidden"
@@ -88,6 +89,7 @@ const Contact = ({ setCursorVariant }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <motion.a
+            whileHover={{ scale: 1.2 }}
             variants={flyIn}
             whileInView="second"
             initial="hidden"
@@ -104,6 +106,7 @@ const Contact = ({ setCursorVariant }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <motion.a
+            whileHover={{ scale: 1.2 }}
             variants={flyIn}
             whileInView="third"
             initial="hidden"
@@ -120,6 +123,7 @@ const Contact = ({ setCursorVariant }) => {
         <div className="w-[1px] h-full bg-white"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden">
           <motion.a
+            whileHover={{ scale: 1.2 }}
             variants={flyIn}
             whileInView="fourth"
             initial="hidden"
@@ -134,7 +138,11 @@ const Contact = ({ setCursorVariant }) => {
           </motion.a>
         </div>
       </div>
-      <RollingContacts  baseVelocity={10} font="text-6xl md:text-12xl font-anton text-white" wrapper=" w-1/2 flex flex-col justify-center items-center"/>
+      <RollingContacts
+        baseVelocity={10}
+        font="text-6xl md:text-12xl font-anton text-white"
+        wrapper=" w-1/2 flex flex-col justify-center items-center"
+      />
       {/* <div className="whitespace-nowrap font-abril w-1/2 flex flex-col justify-center items-center overflow-hidden text-6xl md:text-12xl">
         <div className="h-[105px]">
           <div className="font-anton white-stroke">CONTACT</div>
