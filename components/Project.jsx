@@ -38,7 +38,7 @@ const Project = ({ item, i, setCursorVariant }) => {
     },
   };
   return (
-    <Col className="flex flex-col" md={width}>
+    <Col className="flex flex-col h-[250px]" md={width}>
       <motion.div
         variants={flyIn}
         initial="hidden"
