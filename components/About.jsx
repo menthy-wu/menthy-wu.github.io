@@ -2,6 +2,7 @@ import { motion, useScroll } from "framer-motion";
 import React from "react";
 import { FaCircle } from "react-icons/fa";
 import RollingText from "./RollingText";
+import AboutImg from "./AboutImg";
 
 const About = () => {
   const { scrollPos } = useScroll();
@@ -50,11 +51,14 @@ const About = () => {
                   do eiusmo d tempor incididunt ut labore et dolore magna
                   laborum.
                 </div>
-                <motion.img
+                <div className="w-1/3">
+                  <AboutImg />
+                </div>
+                {/* <motion.img
                   animate={{ x: scrollPos }}
                   src="about1.jpg"
                   className="w-1/3 pl-6"
-                />
+                /> */}
               </div>
             </div>
             <div className="flex flex-col items-end mt-6">
