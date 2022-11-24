@@ -38,7 +38,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-3/4 justify-center items-center flex">
+        <div className="w-3/4 justify-center items-center flex mt-32">
           <div className="w-2/3">
             <div className="flex flex-col items-start">
               <div className="flex items-center w-full">
