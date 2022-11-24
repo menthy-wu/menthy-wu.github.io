@@ -52,18 +52,15 @@ const About = () => {
                   laborum.
                 </div>
                 <div className="w-1/3">
-                  <AboutImg />
+                  <AboutImg imgSrc="about4.JPG" />
                 </div>
-                {/* <motion.img
-                  animate={{ x: scrollPos }}
-                  src="about1.jpg"
-                  className="w-1/3 pl-6"
-                /> */}
               </div>
             </div>
             <div className="flex flex-col items-end mt-6">
               <div className="flex flex-row">
-                <img src="about5.jpg" className="w-1/3 pr-6" />
+                <div className="w-1/3 flex ">
+                  <AboutImg imgSrc="about1.JPG" />
+                </div>
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
                   Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
                   do eiusmo d tempor incididunt ut labore et dolore magna
