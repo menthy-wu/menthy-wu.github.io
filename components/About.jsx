@@ -47,9 +47,9 @@ const About = () => {
               </div>
               <div className="flex flex-row">
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
-                  Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
-                  do eiusmo d tempor incididunt ut labore et dolore magna
-                  laborum.
+                  Good moring, my name is Menthy Wu. I have not finish my website
+                  yet so whoever you are see this shit, I guess I let you see
+                  it. Otherwise I do not know where the hell you find this.
                 </div>
                 <div className="w-1/3">
                   <AboutImg imgSrc="about4.JPG" />
@@ -62,9 +62,9 @@ const About = () => {
                   <AboutImg imgSrc="about1.jpg" />
                 </div>
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
-                  Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
-                  do eiusmo d tempor incididunt ut labore et dolore magna
-                  laborum.
+                  Knowing me, do you really expect me write a fantastic about
+                  page? I do not even speak English so goodbye. If you know
+                  English, please help me with this shit.
                 </div>
               </div>
             </div>

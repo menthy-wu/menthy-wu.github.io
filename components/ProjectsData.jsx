@@ -22,7 +22,7 @@ const ProjectsList = [
       { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
     ],
     discription:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
+      "A 2D platformer game, wins the second place of Cutiehack 2022. See I am really a genius hah. Made with a team of four girls. Woman in STEM WOOHOO!",
     pictures: [
       "Cutie1.png",
       "Cutie2.png",
@@ -41,7 +41,7 @@ const ProjectsList = [
       },
     ],
     discription:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
+      "A 2D puzzle game. Player can switch between winter and a different season and find the seasonal gem. Made with a team of 5.",
     pictures: [
       "season1.jpg",
       "season2.jpg",
@@ -61,7 +61,7 @@ const ProjectsList = [
       },
     ],
     discription:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
+      " A four-level 2D story based puzzles game with zombie protagonist attempting to regain past memories",
     pictures: [
       "Cutie1.png",
       "Cutie2.png",
@@ -77,7 +77,7 @@ const ProjectsList = [
       { type: "github", link: "https://github.com/acm-ucr/membership-portal" },
     ],
     discription:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
+      "A membership protal for ACM obviously. Oh yea, ACM is the CS Club at UCR. So, this is a club project",
     pictures: [
       "Cutie1.png",
       "Cutie2.png",
@@ -94,7 +94,7 @@ const ProjectsList = [
       { type: "play", link: "https://rosehack.com/" },
     ],
     discription:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna laborum.",
+      "Another obvious one, rosehack website. And obviously a team project. Oh yea I also designed it hehe.",
     pictures: [
       "Cutie1.png",
       "Cutie2.png",
