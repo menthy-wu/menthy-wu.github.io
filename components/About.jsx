@@ -59,7 +59,7 @@ const About = () => {
             <div className="flex flex-col items-end mt-6">
               <div className="flex flex-row">
                 <div className="w-1/3 flex ">
-                  <AboutImg imgSrc="about1.JPG" />
+                  <AboutImg imgSrc="about1.jpg" />
                 </div>
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
                   Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed
