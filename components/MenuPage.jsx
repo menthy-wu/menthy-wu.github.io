@@ -141,6 +141,20 @@ const MenuPage = ({ toggleOpen, setCursorVariant }) => {
       >
         - CONTACTS
       </motion.a>
+      <motion.a
+        onMouseEnter={() => setCursorVariant("hover")}
+        onMouseLeave={() => setCursorVariant("default")}
+        onClick={() => toggleOpen()}
+        href="/#arts"
+        variants={flyIn}
+        initial="hidden"
+        animate="fourth"
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 500 }}
+        className="text-left font-abril text-5xl text-black w-full pl-8 mt-3 hover:no-underline hover:text-white hover:bg-black"
+      >
+        - ARTS
+      </motion.a>
     </motion.div>
   );
 };

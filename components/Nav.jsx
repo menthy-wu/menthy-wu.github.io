@@ -26,7 +26,12 @@ const Nav = ({ setCursorVariant }) => {
         setCursorVariant={setCursorVariant}
         link="/#contacts"
       />
-      <div className = ""/>
+      <MovingButton
+        text="Arts"
+        setCursorVariant={setCursorVariant}
+        link="/#arts"
+      />
+      <div className="" />
     </div>
   );
 };

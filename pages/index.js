@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Landing from "../components/Landing";
 import Footer from "../components/Footer";
 import About from "../components/About";
@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Cursor from "../components/Cursor";
 import WaveDivider from "../components/WaveDivider";
 import MenuButton from "../components/MenuButton";
+import Arts from "../components/Arts";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -27,7 +28,8 @@ export default function Home() {
           <WaveDivider />
           <About />
         </div>
-        <Projects setCursorVariant={setCursorVariant}  />
+        <Projects setCursorVariant={setCursorVariant} />
+        <Arts />
         <Contact setCursorVariant={setCursorVariant} />
       </main>
 
