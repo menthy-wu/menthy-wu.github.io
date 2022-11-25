@@ -47,11 +47,11 @@ const About = () => {
               </div>
               <div className="flex flex-row">
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
-                  Good moring, my name is Menthy Wu. I have not finish my website
-                  yet so whoever you are see this shit, I guess I let you see
-                  it. Otherwise I do not know where the hell you find this.
+                  Good morning, my name is Menthy Wu. I am currently a
+                  first-year student at the University of California, Riverside,
+                  majoring in computer science.
                 </div>
-                <div className="w-1/3">
+                <div className="w-1/3 flex">
                   <AboutImg imgSrc="about4.JPG" />
                 </div>
               </div>
@@ -62,9 +62,8 @@ const About = () => {
                   <AboutImg imgSrc="about1.jpg" />
                 </div>
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
-                  Knowing me, do you really expect me write a fantastic about
-                  page? I do not even speak English so goodbye. If you know
-                  English, please help me with this shit.
+                  I am interested in game development, software engineering, and
+                  web development. I also love cat. My cat{"'"}s name is Evan, and he is the cutiest cat ever. 
                 </div>
               </div>
             </div>
