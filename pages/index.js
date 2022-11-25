@@ -29,7 +29,7 @@ export default function Home() {
           <About />
         </div>
         <Projects setCursorVariant={setCursorVariant} />
-        <Arts />
+        <Arts setCursorVariant={setCursorVariant} />
         <Contact setCursorVariant={setCursorVariant} />
       </main>
 

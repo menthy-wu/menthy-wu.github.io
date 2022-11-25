@@ -63,7 +63,7 @@ const About = () => {
                 </div>
                 <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
                   I am interested in game development, software engineering, and
-                  web development. I also love cat. My cat{"'"}s name is Evan, and he is the cutiest cat ever. 
+                  web development. I also love cats. My cat{"'"}s name is Evan, and he is the cutest cat ever. 
                 </div>
               </div>
             </div>

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import RollingText from "./RollingText";
+import { motion } from "framer-motion";
+import Art from "./Art";
 
 const imgLists = [
   "arts/img (1).jpg",
@@ -23,18 +25,40 @@ const imgLists = [
   "arts/img (15).jpg",
   "arts/img (16).jpg",
 ];
-const Arts = () => {
+const Arts = ({ setCursorVariant }) => {
+  const [showPic, setShowPic] = useState(false);
+  const [currPic, setPic] = useState("");
+  const toggle = (link) => {
+    if (showPic) {
+      setShowPic(false);
+    } else {
+      setPic(link);
+      setShowPic(true);
+    }
+  };
   return (
     <div
       id="arts"
       className="z-30 w-full flex flex-row justify-center items-start bg-black pb-32"
     >
+      {showPic && (
+        <img
+          src={currPic}
+          className="absolute z-40 w-7/12"
+          onClick={() => {
+            toggle("");
+          }}
+        />
+      )}
       <Row className="flex justify-start w-10/12 items-center">
         {imgLists.map((img, index) => {
           return (
-            <Col key={index} md={2} className="m-1">
-              <img src={img} />
-            </Col>
+            <Art
+              key={index}
+              link={img}
+              toggle={toggle}
+              setCursorVariant={setCursorVariant}
+            />
           );
         })}
       </Row>
@@ -42,7 +66,7 @@ const Arts = () => {
         <div className="rotate-270 whitespace-nowrap  ">
           <RollingText
             wrapper=" w-full md:h-[105px]"
-            font="text-left font-abril text-10xl text-white"
+            font="text-left font-anton text-10xl text-white"
             baseVelocity={5}
           >
             Arts •
