@@ -104,9 +104,15 @@ const Project = ({ item, i, setCursorVariant }) => {
           )}
           {extended && (
             <div className="flex flex-row justify-center items-center w-full">
-              <Carousel className="justify-center items-center">
+              <Carousel className="flex justify-center items-center">
                 {item.pictures.map((picture, index) => {
-                  return <img key={index} src={picture} />;
+                  return (
+                    <img
+                      key={index}
+                      src={picture}
+                      className="w-[350px] items-center justify-center"
+                    />
+                  );
                 })}
               </Carousel>
             </div>

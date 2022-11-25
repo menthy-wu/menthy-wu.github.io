@@ -63,11 +63,11 @@ const ProjectsList = [
     discription:
       " A four-level 2D story based puzzles game with zombie protagonist attempting to regain past memories",
     pictures: [
-      "Cutie1.png",
-      "Cutie2.png",
-      "Cutie3.png",
-      "Cutie4.png",
-      "Cutie5.png",
+      "zombie1.jpg",
+      "zombie2.jpg",
+      "zombie3.jpg",
+      "zombie4.jpg",
+      "zombie5.jpg",
     ],
   },
   {
@@ -79,11 +79,9 @@ const ProjectsList = [
     discription:
       "A membership protal for ACM obviously. Oh yea, ACM is the CS Club at UCR. So, this is a club project",
     pictures: [
-      "Cutie1.png",
-      "Cutie2.png",
-      "Cutie3.png",
-      "Cutie4.png",
-      "Cutie5.png",
+      "acm1.jpg",
+      "acm2.jpg",
+      "acm3.jpg",
     ],
   },
   {
@@ -96,11 +94,10 @@ const ProjectsList = [
     discription:
       "Another obvious one, rosehack website. And obviously a team project. Oh yea I also designed it hehe.",
     pictures: [
-      "Cutie1.png",
-      "Cutie2.png",
-      "Cutie3.png",
-      "Cutie4.png",
-      "Cutie5.png",
+      "rosehack1.jpg",
+      "rosehack2.jpg",
+      "rosehack3.jpg",
+      "rosehack4.jpg",
     ],
   },
 ];

@@ -11,7 +11,12 @@ const MoreProjectsList = [
     ],
     discription:
       "Personal website, looks pretty cool. You agree right? Now write a 1000 words essay to describe how cool is this website.",
-    pictures: [],
+    pictures: [
+      "personalWeb1.jpg",
+      "personalWeb2.jpg",
+      "personalWeb3.jpg",
+      "personalWeb4.jpg",
+    ],
   },
   {
     title: "Escape From A Room",
