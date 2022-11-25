@@ -27,12 +27,12 @@ const Arts = () => {
   return (
     <div
       id="arts"
-      className="z-30 w-full flex flex-row justify-center items-start bg-black"
+      className="z-30 w-full flex flex-row justify-center items-start bg-black pb-32"
     >
       <Row className="flex justify-start w-10/12 items-center">
         {imgLists.map((img, index) => {
           return (
-            <Col key={index} md={3} className="m-1">
+            <Col key={index} md={2} className="m-1">
               <img src={img} />
             </Col>
           );
