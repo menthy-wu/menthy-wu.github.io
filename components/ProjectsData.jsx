@@ -22,7 +22,7 @@ const ProjectsList = [
       { type: "play", link: "https://wmx-owo.itch.io/cutie-save-the-world" },
     ],
     discription:
-      "A 2D platformer game, wins the second place of Cutiehack 2022. See I am really a genius hah. Made with a team of four girls. Woman in STEM WOOHOO!",
+      "A 2D platformer game, wins the second place of Cutiehack 2022. Made with a team of four girls. Woman in STEM WOOHOO!",
     pictures: [
       "Cutie1.png",
       "Cutie2.png",
@@ -53,7 +53,7 @@ const ProjectsList = [
   },
   {
     title: "Little Zombie’s Spring",
-    tools: "python, pygame, Photoshop",
+    tools: "Python, Pygame, Photoshop",
     links: [
       {
         type: "github",
@@ -78,14 +78,10 @@ const ProjectsList = [
     ],
     discription:
       "A membership protal for ACM obviously. Oh yea, ACM is the CS Club at UCR. So, this is a club project",
-    pictures: [
-      "acm1.jpg",
-      "acm2.jpg",
-      "acm3.jpg",
-    ],
+    pictures: ["acm1.jpg", "acm2.jpg", "acm3.jpg"],
   },
   {
-    title: "Rosehack 2023 Web",
+    title: "Rosehack 2023 Website",
     tools: "Next.js, Google Cloud Platform, Tailwind",
     links: [
       { type: "github", link: "https://github.com/Rose-Hacks/rosehack2023" },

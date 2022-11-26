@@ -56,6 +56,9 @@ const MovingButton = ({ text, setCursorVariant, link }) => {
         <Link
           onMouseEnter={() => setCursorVariant("onMovingButton")}
           onMouseLeave={() => setCursorVariant("default")}
+          onClick={() => {
+            setCursorVariant("default");
+          }}
           href={link}
           className="text-center font-abril p-2 text-xl hover:no-underline hover:text-black"
         >
