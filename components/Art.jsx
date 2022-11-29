@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Art = ({ setCursorVariant, toggle, link }) => {
   return (
-    <Col md={2} className="m-1">
+    <Col xs={3} md={2} className="m-1">
       <motion.img
         onClick={() => {
           toggle(link);
