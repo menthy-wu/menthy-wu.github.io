@@ -37,10 +37,8 @@ const MovingButton = ({ text, setCursorVariant, link }) => {
     <motion.div
       onMouseLeave={mouseLeave}
       onMouseMove={mouseMove}
-      className="0"
+      className="w-[140px] h-24"
       style={{
-        width: 180,
-        height: 70,
         display: "flex",
         placeItems: "center",
         placeContent: "center",
@@ -49,7 +47,7 @@ const MovingButton = ({ text, setCursorVariant, link }) => {
       }}
     >
       <motion.div
-        className="bg-nav rounded-full w-11/12 text-center font-abril p-2"
+        className="bg-nav rounded-full w-11/12 text-center font-abril md:p-2"
         variants={variants}
         animate="default"
       >
@@ -60,7 +58,7 @@ const MovingButton = ({ text, setCursorVariant, link }) => {
             setCursorVariant("default");
           }}
           href={link}
-          className="text-center font-abril p-2 text-xl hover:no-underline hover:text-black"
+          className="text-center font-abril md:p-2 text-xs md:text-xl hover:no-underline hover:text-black"
         >
           {text}
         </Link>

@@ -84,7 +84,7 @@ const MenuButton = ({ setCursorVariant }) => {
         onClick={() => toggleOpen()}
         onMouseLeave={mouseLeave}
         onMouseMove={mouseMove}
-        className="fixed top-5 right-10 z-50 rounded-full h-15 w-15 items-center justify-center flex "
+        className="fixed top-24 right-5 z-50 rounded-full h-15 w-15 items-center justify-center flex "
       >
         <motion.div
           onMouseEnter={() => setCursorVariant("onMovingButton")}

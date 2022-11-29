@@ -59,7 +59,7 @@ const Contact = ({ setCursorVariant }) => {
     hidden: {
       rotate: 270,
       opacity: 0,
-      x: -100,
+      x: -10,
       y: 0,
     },
   };
@@ -68,7 +68,7 @@ const Contact = ({ setCursorVariant }) => {
       id="contacts"
       className="bg-black w-full h-[700px] flex flex-Col min-h-screen justify-between  sticky top-0"
     >
-      <div className="ml-10 w-1/2 flex justify-start items-center md:text-10xl text-4xl">
+      <div className="ml-10 w-1/2 flex justify-start items-center md:text-10xl text-2xl">
         <div className="ml-3 mr-0 w-[1px] h-full bg-white p-0"></div>
         <div className="h-full w-[130px] flex justify-center items-center overflow-hidden m-0 p-0">
           <motion.a
@@ -140,46 +140,9 @@ const Contact = ({ setCursorVariant }) => {
       </div>
       <RollingContacts
         baseVelocity={10}
-        font="text-6xl md:text-12xl font-anton text-white"
+        font="text-4xl md:text-12xl font-anton text-white"
         wrapper=" w-1/2 flex flex-col justify-center items-center"
       />
-      {/* <div className="whitespace-nowrap font-abril w-1/2 flex flex-col justify-center items-center overflow-hidden text-6xl md:text-12xl">
-        <div className="h-[105px]">
-          <div className="font-anton white-stroke">CONTACT</div>
-        </div>
-        <div className="h-2"></div>
-        <div className="h-[105px]">
-          <div className="font-anton text-white">CONTACT</div>
-        </div>
-        <div className="h-[105px]">
-          <div className="font-anton white-stroke">CONTACT</div>
-        </div>
-        <div className="h-2"></div>
-        <div className="h-[105px]">
-          <div className="font-anton text-white">CONTACT</div>
-        </div>
-        <div className="h-[105px]">
-          <div className="font-anton white-stroke">CONTACT</div>
-        </div>
-        <div className="h-2"></div>
-        <div className="h-[105px]">
-          <div className="font-anton text-white">CONTACT</div>
-        </div>
-        <div className="h-[105px]">
-          <div className="font-anton white-stroke">CONTACT</div>
-        </div>
-        <div className="h-2"></div>
-        <div className="h-[105px]">
-          <div className="font-anton text-white">CONTACT</div>
-        </div>
-        <div className="h-[105px]">
-          <div className="font-anton white-stroke">CONTACT</div>
-        </div>
-        <div className="h-2"></div>
-        <div className="h-[105px]">
-          <div className="font-anton text-white">CONTACT</div>
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -5,12 +5,8 @@ import MovingButton from "./MovingButton";
 
 const Nav = ({ setCursorVariant }) => {
   return (
-    <div className="flex justify-between mx-8 my-2 w-10/12">
-      <MovingButton
-        text="Menthy Wu"
-        setCursorVariant={setCursorVariant}
-        link="/"
-      />
+    <div className="flex justify-between my-2 w-full">
+      <MovingButton text="Home" setCursorVariant={setCursorVariant} link="/" />
       <MovingButton
         text="About"
         setCursorVariant={setCursorVariant}
