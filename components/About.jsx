@@ -3,6 +3,7 @@ import React from "react";
 import { FaCircle } from "react-icons/fa";
 import RollingText from "./RollingText";
 import AboutImg from "./AboutImg";
+import { Row, Col } from "react-bootstrap";
 
 const About = () => {
   const { scrollPos } = useScroll();
@@ -45,27 +46,34 @@ const About = () => {
                 <FaCircle className="text-white" />
                 <hr className="ml-[-3px] bg-white h-[2px] w-full" />
               </div>
-              <div className="flex flex-row">
-                <div className="font-quicksand text-white md:text-3xl w-2/3 text-right">
+              <Row className="flex flex-row-reverse sm:flex-row justify-center items-center">
+                <Col
+                  md={8}
+                  className="font-quicksand text-white md:text-3xl text-right"
+                >
                   Good morning, my name is Menthy Wu. I am currently a
                   first-year student at the University of California, Riverside,
                   majoring in computer science.
-                </div>
-                <div className="w-1/3 flex">
+                </Col>
+                <Col md={4} className="flex h-[120px] md:h-[250px]">
                   <AboutImg imgSrc="about4.JPG" />
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
             <div className="flex flex-col items-end mt-6">
-              <div className="flex flex-row">
-                <div className="w-1/3 flex ">
+              <Row className="flex flex-row">
+                <Col md={4} className="flex h-[120px] md:h-[250px]">
                   <AboutImg imgSrc="about1.jpg" />
-                </div>
-                <div className="font-quicksand text-white md:text-3xl w-2/3 text-left">
+                </Col>
+                <Col
+                  md={8}
+                  className="font-quicksand text-white md:text-3xl text-left"
+                >
                   I am interested in game development, software engineering, and
-                  web development. I also love cats. My cat{"'"}s name is Evan, and he is the cutest cat ever. 
-                </div>
-              </div>
+                  web development. I also love cats. My cat{"'"}s name is Evan,
+                  and he is the cutest cat ever.
+                </Col>
+              </Row>
             </div>
           </div>
         </div>

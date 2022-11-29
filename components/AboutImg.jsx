@@ -21,38 +21,40 @@ const AboutImg = ({ imgSrc }) => {
     },
   };
   return (
-    <svg
-      className="w-full h-full flex"
-      preserveAspectRatio="xMidYMid meet"
-      x="0"
-      y="0"
-      id="visual"
-      viewBox="0 0 900 600"
-      version="1.1"
-      transform="scale(1)"
-    >
-      <defs>
-        <mask id="shape">
-          <motion.path
-            variants={variants}
-            animate="animation"
-            d="M127.3 -94.8C149 -36 139.4 19.5 113 79.1C86.6 138.7 43.3 202.3 -15.9 211.5C-75.1 220.7 -150.1 175.3 -193.4 106C-236.7 36.7 -248.3 -56.7 -210.7 -124.7C-173.2 -192.7 -86.6 -235.3 -16.9 -225.6C52.8 -215.8 105.7 -153.7 127.3 -94.8"
-            fill="#FFFFFF"
-            transform="scale(1 1.2) translate(460 260)"
-          />
-        </mask>
-      </defs>
-      <image
-        mask="url(#shape)"
+    <div className="w-full flex justify-center">
+      <svg
+        className="w-1/3 md:w-full flex"
         preserveAspectRatio="xMidYMid meet"
         x="0"
         y="0"
-        href={imgSrc}
-        width="100%"
-        height="100%"
-        transform="scale(2) translate(-230 -150)"
-      />
-    </svg>
+        id="visual"
+        viewBox="0 0 900 600"
+        version="1.1"
+        transform="scale(1)"
+      >
+        <defs>
+          <mask id="shape">
+            <motion.path
+              variants={variants}
+              animate="animation"
+              d="M127.3 -94.8C149 -36 139.4 19.5 113 79.1C86.6 138.7 43.3 202.3 -15.9 211.5C-75.1 220.7 -150.1 175.3 -193.4 106C-236.7 36.7 -248.3 -56.7 -210.7 -124.7C-173.2 -192.7 -86.6 -235.3 -16.9 -225.6C52.8 -215.8 105.7 -153.7 127.3 -94.8"
+              fill="#FFFFFF"
+              transform="scale(1 1.2) translate(460 260)"
+            />
+          </mask>
+        </defs>
+        <image
+          mask="url(#shape)"
+          preserveAspectRatio="xMidYMid meet"
+          x="0"
+          y="0"
+          href={imgSrc}
+          width="100%"
+          height="100%"
+          transform="scale(2) translate(-230 -150)"
+        />
+      </svg>
+    </div>
   );
 };
 
