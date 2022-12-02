@@ -39,13 +39,13 @@ const MenuButton = ({ setCursorVariant }) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setMousePosition({
       x: e.clientX - rect.left - 27,
-      y: e.clientY - 48,
+      y: e.clientY - 50,
     });
   };
   const variants = {
     default: {
       x: mousePosition.x,
-      y: mousePosition.y,
+      y: mousePosition.y - 50,
       transition: {
         type: "spring",
         mass: 0.6,
