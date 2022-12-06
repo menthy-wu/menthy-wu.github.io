@@ -46,7 +46,7 @@ const About = () => {
                 <FaCircle className="text-white" />
                 <hr className="ml-[-3px] bg-white h-[2px] w-full" />
               </div>
-              <Row className="flex flex-row-reverse sm:flex-row justify-center items-center">
+              <Row className="flex flex-row sm:flex-row-reverse justify-center items-center">
                 <Col
                   md={8}
                   className="font-quicksand text-white md:text-3xl text-right"
