@@ -30,7 +30,7 @@ const Footer = ({ setCursorVariant }) => {
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
         rel="noreferrer"
-        href="mailto:wumengxuan0728@gmail.com"
+        href="https://www.instagram.com/wmx_owo/"
         className="text-black hover:text-black"
       >
         <FaInstagram className="text-6xl" />
@@ -42,7 +42,7 @@ const Footer = ({ setCursorVariant }) => {
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
         rel="noreferrer"
-        href="mailto:wumengxuan0728@gmail.com"
+        href="https://linkedin.com/in/mengxuan-wu"
         className="text-black hover:text-black"
       >
         <FaLinkedin className="text-6xl" />
@@ -54,7 +54,7 @@ const Footer = ({ setCursorVariant }) => {
         transition={{ type: "spring", stiffness: 500 }}
         target="_blank"
         rel="noreferrer"
-        href="mailto:wumengxuan0728@gmail.com"
+        href="https://github.com/menthy-wu"
         className="text-black hover:text-black"
       >
         <FaGithub className="text-6xl" />
