@@ -24,8 +24,10 @@ const MenuButton = ({ setCursorVariant }) => {
     setOpen(!isOpen);
     if (!isOpen) {
       setMenuButtonAnimation("open");
+      setCursorVariant("default");
     } else {
       setMenuButtonAnimation("closed");
+      setCursorVariant("default");
     }
   };
   const mouseLeave = () => {
