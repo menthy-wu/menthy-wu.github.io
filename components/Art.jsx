@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Art = ({ setCursorVariant, toggle, link }) => {
   return (
-    <Col xs={3} md={2} className="m-1">
+    <div className="m-4">
       <motion.img
         onClick={() => {
           toggle(link);
@@ -16,7 +16,7 @@ const Art = ({ setCursorVariant, toggle, link }) => {
         whileHover={{ scale: 1.2 }}
         transition={{ type: "spring", stiffness: 500 }}
       />
-    </Col>
+    </div>
   );
 };
 export default Art;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { div, Col } from "react-bootstrap";
 import RollingText from "./RollingText";
 import { motion } from "framer-motion";
 import Art from "./Art";
@@ -50,7 +50,7 @@ const Arts = ({ setCursorVariant }) => {
           }}
         />
       )}
-      <Row className="flex justify-start w-10/12 items-center">
+      <div className="w-9/12 columns-4 gap-4">
         {imgLists.map((img, index) => {
           return (
             <Art
@@ -61,8 +61,8 @@ const Arts = ({ setCursorVariant }) => {
             />
           );
         })}
-      </Row>
-      <div className="h-screen w-[105px] flex justify-center items-center overflow-hidden ">
+      </div>
+      <div className="h-screen w-[105px] flex justify-center items-center overflow-hidden">
         <div className="rotate-270 whitespace-nowrap  ">
           <RollingText
             wrapper=" w-full md:h-[105px]"
