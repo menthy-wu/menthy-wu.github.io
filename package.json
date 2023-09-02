@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky install",
+    "check": "npx prettier --check ."
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
@@ -24,6 +26,12 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "prettier": "3.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.--write": "prettier --write"
   }
 }
