@@ -1,4 +1,4 @@
-name: Personal Website
+name: Menthy Personal Website
 on:
   pull_request:
     branches: [main, dev]
