@@ -1,7 +1,43 @@
 import React from "react";
 
 const Landing = () => {
-  return <div>Landing</div>;
+  return (
+    <div className="h-screen items-start justify-center flex flex-col w-7/12">
+      <div className="flex items-end gap-2">
+        <div className="flex flex-col items-end">
+          <p className="text-custom-white font-montserrat font-regular text-base">
+            SOFTWARE ENGINEER
+          </p>
+          <p className="text-custom-white font-montserrat font-thin text-base">
+            UI/UX DESIGNER
+          </p>
+          <p className="text-custom-white font-anticDidone font-thin text-5xl translate-x-6">
+            MENTHY WU
+          </p>
+        </div>
+        <div className="bg-custom-theme h-32 w-8" />
+        <div>
+          <p className="text-custom-white/60 font-montserrat font-thin text-lg">
+            CAT
+          </p>
+          <p className="text-custom-white/50 font-montserrat font-thin text-base">
+            FOOD
+          </p>
+          <p className="text-custom-white/40 font-montserrat font-thin text-sm">
+            DIGITAL ART
+          </p>
+        </div>
+      </div>
+      <div className="flex mx-12 my-4">
+        <div className="bg-custom-white h-32 w-[0.1px]" />
+        <div className="bg-custom-white h-6 w-2 mt-7" />
+        <p className="text-custom-white font-montserrat font-thin text-base mx-3 mt-8">
+          My name is Menthy Wu. I am studying computer science at University of
+          California right now. It is really nice to meet you here!
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Landing;

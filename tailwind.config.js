@@ -7,6 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        anticDidone: ["var(--font-anticDidone)"],
+        montserrat: ["var(--font-montserrat)"],
+      },
+      colors: {
+        custom: {
+          black: "#000000",
+          white: "#ffffff",
+          theme: "#5200FF",
+        },
+      },
       backgroundImage: {},
     },
   },
