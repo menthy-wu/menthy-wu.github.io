@@ -13,6 +13,9 @@ import {
   BiLogoTailwindCss,
   BiLogoReact,
   BiLogoGithub,
+  BiEnvelope,
+  BiLogoLinkedinSquare,
+  BiLogoInstagram,
 } from "react-icons/bi";
 import {
   TbBrandCSharp,
@@ -51,6 +54,9 @@ export const techIcons = {
   "Adobe Illustrator": <SiAdobeillustrator className={iconClassName} />,
   Github: <BiLogoGithub className={iconClassName} />,
   Game: <FaGamepad className={iconClassName} />,
+  Email: <BiEnvelope className={iconClassName} />,
+  LinkedIn: <BiLogoLinkedinSquare className={iconClassName} />,
+  Instagram: <BiLogoInstagram className={iconClassName} />,
 };
 
 export const techStacks = [

@@ -3,6 +3,7 @@
 import Navigation from "@/components/Navigation";
 import "./globals.css";
 import { Antic_Didone, Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const anticDidone = Antic_Didone({
   subsets: ["latin"],
@@ -27,9 +28,10 @@ export default function RootLayout({ children }) {
       className={`${anticDidone.variable} ${montserrat.variable}`}
     >
       <body>
-        <div className="bg-custom-black w-full flex items-center justify-center">
+        <div className="bg-custom-black w-full flex items-center justify-center flex-col">
           <Navigation />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

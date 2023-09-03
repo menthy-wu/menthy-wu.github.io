@@ -9,7 +9,7 @@ import circles from "../../../public/about/circles.svg";
 
 const About = () => {
   return (
-    <section id="about" className="justify-center flex flex-col w-6/12">
+    <section id="about" className="justify-center flex flex-col w-6/12 my-10">
       <div className="flex w-full flex-col z-10">
         <div className="w-2/3 self-end px-4 py-6">
           <p className="text-custom-white font-montserrats font-thin">
