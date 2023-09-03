@@ -15,7 +15,7 @@ const About = () => {
     >
       <div className="flex w-full flex-col z-10">
         <div className="w-2/3 self-end px-4 py-6">
-          <p className="text-custom-white font-montserrats font-thin">
+          <p className="m-0 text-custom-white font-montserrats font-thin">
             IF YOU WANT TO KNOW MORE
           </p>
           <Title text="ABOUT ME">
@@ -28,24 +28,24 @@ const About = () => {
             className="absolute top-0 -translate-x-1/4 -translate-y-1/2 z-0"
           />
           <Image src={me} alt="me" className="col-span-1 -translate-y-16" />
-          <div className="flex flex-col -translate-x-8  h-full justify-between col-span-2 gap-3">
+          <div className="flex flex-col -translate-x-8 justify-between col-span-2 gap-3">
             <div className="glass text-custom-white font-montserrats font-thin text-sm md:text-lg p-8 md:p-11 h-full">
               My name is Menthy Wu. I am studying
               <span className="font-normal">&nbsp;computer science&nbsp;</span>
               at University of California right now. It is really nice to meet
               you here!
             </div>
-            <div className="glass mb-4 p-3">
+            <div className="glass mb-4 p-3 h-fit">
               <div className="flex items-center">
                 <LuGraduationCap className="text-custom-white text-2xl mr-2" />
-                <p className="text-custom-white font-montserrats font-thin text-base md:text-xl">
+                <p className="m-0 text-custom-white font-montserrats font-thin text-base md:text-xl">
                   EDUCATION
                 </p>
               </div>
-              <p className="text-custom-white font-montserrats font-thin text-xs md:text-base">
+              <p className="m-0 text-custom-white font-montserrats font-thin text-xs md:text-base">
                 Bachelor of Science in Computer Science
               </p>
-              <p className="text-custom-white font-montserrats font-thin text-xs md:text-base">
+              <p className="m-0 text-custom-white font-montserrats font-thin text-xs md:text-base">
                 at University of California, Riverside
               </p>
             </div>

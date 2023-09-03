@@ -29,18 +29,20 @@ const Project = ({ project }) => {
         />
         <div className="w-[60%] ml-5 flex flex-col">
           <div className="h-full flex flex-col justify-center">
-            <p className="text-sm md:text-base font-light my-1 md:my-3">
+            <p className="m-0 text-sm md:text-base font-light my-1 md:my-3">
               {project.title.toUpperCase()}
             </p>
-            <p className="text-xs md:text-sm font-thin">
+            <p className="m-0 text-xs md:text-sm font-thin">
               {project.description}
             </p>
           </div>
           <div className="w-full flex justify-between items-end flex-col md:flex-row">
             <div className="font-anticDidone flex items-center text-xs md:text-sm gap-1 md;gap-2">
-              <p>Tech Stack: </p>
+              <p className="m-0">Tech Stack: </p>
               {project.techStack.map((techStack, index) => (
-                <p key={index}>{techStack}</p>
+                <p className="m-0" key={index}>
+                  {techStack}
+                </p>
               ))}
             </div>
             <div className="text-4xl flex gap-2 ">

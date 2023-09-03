@@ -8,25 +8,25 @@ const Landing = () => {
     >
       <div className="flex items-end gap-2">
         <div className="flex flex-col items-end">
-          <p className="text-custom-white font-montserrat font-regular text-xs md:text-base">
+          <p className="m-0 text-custom-white font-montserrat font-regular text-xs md:text-base">
             SOFTWARE ENGINEER
           </p>
-          <p className="text-custom-white font-montserrat font-thin text-xs md:text-base">
+          <p className="m-0 text-custom-white font-montserrat font-thin text-xs md:text-base">
             UI/UX DESIGNER
           </p>
-          <p className="text-custom-white font-anticDidone text-3xl md:text-5xl translate-x-6">
+          <p className="m-0 text-custom-white font-anticDidone text-3xl md:text-5xl translate-x-6">
             MENTHY WU
           </p>
         </div>
         <div className="bg-custom-theme h-32 w-8" />
         <div>
-          <p className="text-custom-white/60 font-montserrat font-thin text-sm md:text-lg">
+          <p className="m-0 text-custom-white/60 font-montserrat font-thin text-sm md:text-lg">
             CAT
           </p>
-          <p className="text-custom-white/50 font-montserrat font-thin text-xs md:text-base">
+          <p className="m-0 text-custom-white/50 font-montserrat font-thin text-xs md:text-base">
             FOOD
           </p>
-          <p className="text-custom-white/40 font-montserrat font-thin text-xs md:text-sm">
+          <p className="m-0 text-custom-white/40 font-montserrat font-thin text-xs md:text-sm">
             DIGITAL ART
           </p>
         </div>
@@ -34,7 +34,7 @@ const Landing = () => {
       <div className="flex mx-12 my-4">
         <div className="bg-custom-white h-32 w-[0.1px]" />
         <div className="bg-custom-white h-6 w-2 mt-7" />
-        <p className="text-custom-white font-montserrat font-thin text-xs md:text-base mx-3 mt-8">
+        <p className="m-0 text-custom-white font-montserrat font-thin text-xs md:text-base mx-3 mt-8">
           My name is Menthy Wu. I am studying computer science at University of
           California right now. It is really nice to meet you here!
         </p>

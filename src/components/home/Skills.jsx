@@ -19,7 +19,7 @@ const Skills = () => {
             <div>
               {techStackList.map((techStack, index) => (
                 <p
-                  className="flex items-center gap-1 font-anticDidone"
+                  className="m-0 flex items-center gap-1 font-anticDidone"
                   key={index}
                 >
                   {techIcons[techStack]}
