@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <section
       id="landing"
-      className="md:h-screen items-start justify-center flex flex-col w-11/12 md:w-7/12"
+      className="h-[70vh] md:h-screen items-start justify-center flex flex-col w-11/12 md:w-7/12"
     >
       <div className="flex items-end gap-2">
         <div className="flex flex-col items-end">
