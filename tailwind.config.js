@@ -18,7 +18,15 @@ module.exports = {
           theme: "#5200FF",
         },
       },
-      backgroundImage: {},
+      animation: {
+        rolling: "rolling 25s linear infinite",
+      },
+      keyframes: {
+        rolling: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],

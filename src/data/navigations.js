@@ -1,7 +1,7 @@
 export const navigations = [
   {
     text: "HOME",
-    link: "/",
+    link: "/#landing",
   },
   {
     text: "ABOUT",

@@ -2,7 +2,10 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="h-screen items-start justify-center flex flex-col w-7/12">
+    <section
+      id="landing"
+      className="h-screen items-start justify-center flex flex-col w-7/12"
+    >
       <div className="flex items-end gap-2">
         <div className="flex flex-col items-end">
           <p className="text-custom-white font-montserrat font-regular text-base">
@@ -11,7 +14,7 @@ const Landing = () => {
           <p className="text-custom-white font-montserrat font-thin text-base">
             UI/UX DESIGNER
           </p>
-          <p className="text-custom-white font-anticDidone font-thin text-5xl translate-x-6">
+          <p className="text-custom-white font-anticDidone text-5xl translate-x-6">
             MENTHY WU
           </p>
         </div>
@@ -36,7 +39,7 @@ const Landing = () => {
           California right now. It is really nice to meet you here!
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

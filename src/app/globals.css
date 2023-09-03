@@ -4,6 +4,12 @@
 
 @layer components {
   .glass {
-    @apply bg-custom-white/20 backdrop-blur-md border-custom-white/40 border-[0.1px];
+    @apply bg-custom-white/20 backdrop-blur-xl border-custom-white/40 border-[0.1px];
+  }
+}
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
   }
 }

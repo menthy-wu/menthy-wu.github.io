@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <div className="flex justify-center bg-gradient-to-b from-custom-white/20 to-custom-white/10 backdrop-blur-md fixed top-0 w-full">
+    <div className="z-50 flex justify-center bg-gradient-to-b from-custom-white/20 to-custom-white/10 backdrop-blur-md fixed top-0 w-full">
       {navigations.map((navigation, index) => (
         <Link
           key={index}
