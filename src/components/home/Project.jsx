@@ -19,7 +19,7 @@ const Project = ({ project }) => {
           className="w-4/5 z-0 absolute top-0 opacity-30 h-full group-even:right-0 group-odd:left-0"
         />
       </div>
-      <div className="glass w-full text-custom-white font-montserrat flex group-even:flex-row-reverse p-4 rounded-md relative justify-between flex-col md:flex-row">
+      <div className="glass w-full text-custom-white font-montserrat flex group-even:flex-row-reverse p-4 rounded-md relative justify-between">
         <Image
           src={imgList[0]}
           width={100}
