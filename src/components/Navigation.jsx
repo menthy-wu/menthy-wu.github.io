@@ -8,7 +8,7 @@ const Navigation = () => {
       {navigations.map((navigation, index) => (
         <Link
           key={index}
-          className="font-montserrat text-white text-base md:text-lg no-underline m-3 p-0 font-thin"
+          className="font-montserrat text-white text-base md:text-lg no-underline m-3 p-0 font-thin hover:cursor-pointer hover:opacity-60 hover:scale-110 duration-300"
           href={navigation.link}
         >
           {navigation.text}
