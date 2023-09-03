@@ -12,6 +12,7 @@ import {
   BiLogoGoogleCloud,
   BiLogoTailwindCss,
   BiLogoReact,
+  BiLogoGithub,
 } from "react-icons/bi";
 import {
   TbBrandCSharp,
@@ -24,6 +25,7 @@ import {
   SiAdobeillustrator,
   SiFigma,
 } from "react-icons/si";
+import { FaGamepad } from "react-icons/fa";
 
 const iconClassName = "";
 export const techIcons = {
@@ -47,6 +49,8 @@ export const techIcons = {
   "Adobe Photoshop": <SiAdobephotoshop className={iconClassName} />,
   Figma: <SiFigma className={iconClassName} />,
   "Adobe Illustrator": <SiAdobeillustrator className={iconClassName} />,
+  Github: <BiLogoGithub className={iconClassName} />,
+  Game: <FaGamepad className={iconClassName} />,
 };
 
 export const techStacks = [

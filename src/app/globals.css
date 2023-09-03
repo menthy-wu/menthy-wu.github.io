@@ -4,7 +4,7 @@
 
 @layer components {
   .glass {
-    @apply bg-custom-white/20 backdrop-blur-xl border-custom-white/40 border-[0.1px];
+    @apply bg-custom-white/20 backdrop-blur-lg border-custom-white/40 border-[0.1px];
   }
 }
 
