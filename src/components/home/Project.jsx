@@ -19,32 +19,34 @@ const Project = ({ project }) => {
           className="w-4/5 z-0 absolute top-0 opacity-30 h-full group-even:right-0 group-odd:left-0"
         />
       </div>
-      <div className="glass w-full text-custom-white font-montserrat flex group-even:flex-row-reverse p-4 rounded-md relative justify-between">
+      <div className="glass w-full text-custom-white font-montserrat flex group-even:flex-row-reverse p-4 rounded-md relative justify-between flex-col md:flex-row">
         <Image
           src={imgList[0]}
           width={100}
           height={100}
           alt="img"
-          className="w-[40%] group-odd:-ml-10 group-even:-mr-10"
+          className="w-[40%] group-odd:-ml-10 group-even:-mr-10 object-contain"
         />
         <div className="w-[60%] ml-5 flex flex-col">
           <div className="h-full flex flex-col justify-center">
-            <p className="text-base font-light my-3">
+            <p className="text-sm md:text-base font-light my-1 md:my-3">
               {project.title.toUpperCase()}
             </p>
-            <p className="text-sm font-thin">{project.description}</p>
+            <p className="text-xs md:text-sm font-thin">
+              {project.description}
+            </p>
           </div>
-          <div className="w-full flex justify-between items-end">
-            <div className="font-anticDidone flex items-center text-sm gap-2">
+          <div className="w-full flex justify-between items-end flex-col md:flex-row">
+            <div className="font-anticDidone flex items-center text-xs md:text-sm gap-1 md;gap-2">
               <p>Tech Stack: </p>
               {project.techStack.map((techStack, index) => (
                 <p key={index}>{techStack}</p>
               ))}
             </div>
-            <div className="text-4xl flex gap-2">
+            <div className="text-4xl flex gap-2 ">
               {project.links.map((link, index) => (
                 <Link href={Object.values(link)[0]} key={index}>
-                  <div className="hover:cursor-pointer hover:opacity-60 hover:scale-110 duration-300">
+                  <div className="hover:cursor-pointer hover:opacity-60 hover:scale-110 duration-300 text-custom-white">
                     {techIcons[Object.keys(link)[0]]}
                   </div>
                 </Link>

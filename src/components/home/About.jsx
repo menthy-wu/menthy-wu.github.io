@@ -9,14 +9,17 @@ import circles from "../../../public/about/circles.svg";
 
 const About = () => {
   return (
-    <section id="about" className="justify-center flex flex-col w-6/12 my-10">
+    <section
+      id="about"
+      className="justify-center flex flex-col w-11/12 md:w-6/12 my-4 md:my-10"
+    >
       <div className="flex w-full flex-col z-10">
         <div className="w-2/3 self-end px-4 py-6">
           <p className="text-custom-white font-montserrats font-thin">
             IF YOU WANT TO KNOW MORE
           </p>
           <Title text="ABOUT ME">
-            <div className="h-12 w-20 absolute bg-custom-theme -right-2 top-0 z-10" />
+            <div className="h-8 md:h-12 w-14 md:w-20 absolute bg-custom-theme -right-2 top-0 z-10" />
           </Title>
         </div>
         <div className="relative grid grid-cols-3">
@@ -26,7 +29,7 @@ const About = () => {
           />
           <Image src={me} alt="me" className="col-span-1 -translate-y-16" />
           <div className="flex flex-col -translate-x-8  h-full justify-between col-span-2 gap-3">
-            <div className="glass text-custom-white font-montserrats font-thin text-lg p-11 h-full">
+            <div className="glass text-custom-white font-montserrats font-thin text-sm md:text-lg p-8 md:p-11 h-full">
               My name is Menthy Wu. I am studying
               <span className="font-normal">&nbsp;computer science&nbsp;</span>
               at University of California right now. It is really nice to meet
@@ -35,14 +38,14 @@ const About = () => {
             <div className="glass mb-4 p-3">
               <div className="flex items-center">
                 <LuGraduationCap className="text-custom-white text-2xl mr-2" />
-                <p className="text-custom-white font-montserrats font-thin text-xl">
+                <p className="text-custom-white font-montserrats font-thin text-base md:text-xl">
                   EDUCATION
                 </p>
               </div>
-              <p className="text-custom-white font-montserrats font-thin text-base">
+              <p className="text-custom-white font-montserrats font-thin text-xs md:text-base">
                 Bachelor of Science in Computer Science
               </p>
-              <p className="text-custom-white font-montserrats font-thin text-base">
+              <p className="text-custom-white font-montserrats font-thin text-xs md:text-base">
                 at University of California, Riverside
               </p>
             </div>
@@ -50,13 +53,13 @@ const About = () => {
         </div>
       </div>
       <div className="flex z-0">
-        <div className="glass w-full overflow-x-hidden h-fit ml-16 mt-7">
+        <div className="glass w-full overflow-x-hidden h-fit ml-16 mt-3 md:mt-7 mr-4 md:mr-0">
           <div className="animate-rolling flex hover:pause">
             {Object.values(techStacks).map((techStackList, index) =>
               techStackList.map((techStack, index) => (
                 <div
                   key={index}
-                  className="text-custom-white text-4xl mx-1 my-2"
+                  className="text-custom-white text-3xl md:text-4xl mx-1 my-2"
                 >
                   {techIcons[techStack]}
                 </div>
@@ -66,7 +69,7 @@ const About = () => {
               techStackList.map((techStack, index) => (
                 <div
                   key={index}
-                  className="text-custom-white text-4xl mx-1 my-2"
+                  className="text-custom-white text-3xl md:text-4xl mx-1 my-2"
                 >
                   {techIcons[techStack]}
                 </div>
@@ -77,7 +80,7 @@ const About = () => {
         <Image
           src={evan}
           alt="evan"
-          className="w-1/5 translate-x-8 -translate-y-10"
+          className="w-1/5 md:translate-x-8 -translate-y-5 md:-translate-y-10"
         />
       </div>
     </section>

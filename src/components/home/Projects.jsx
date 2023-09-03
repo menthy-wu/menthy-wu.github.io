@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="justify-center flex flex-col w-6/12 my-10"
+      className="justify-center flex flex-col w-11/12 md:w-6/12 my-10"
     >
       <Title text="PROJECTS">
         <div className="h-6 w-24 absolute bg-custom-theme -left-4 -bottom-1 z-10" />

@@ -9,11 +9,14 @@ const Arts = () => {
   );
 
   return (
-    <section id="arts" className="justify-center flex flex-col w-6/12 my-10">
+    <section
+      id="arts"
+      className="justify-center flex flex-col w-10/12 md;w-6/12 my-10"
+    >
       <Title text="ARTS">
         <div className="h-6 w-24 absolute bg-custom-theme -left-4 -bottom-1 z-10" />
       </Title>
-      <div className="columns-4 gap-4 w-full">
+      <div className="columns-4 gap-2 md:gap-4 w-full">
         {imgList.map((img, index) => {
           return (
             <Image
@@ -21,7 +24,7 @@ const Arts = () => {
               src={img}
               width={500}
               height={500}
-              className="my-4"
+              className="my-2 md:my-4"
             />
           );
         })}

@@ -2,6 +2,7 @@
 /* eslint-disable new-cap */
 import Navigation from "@/components/Navigation";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Antic_Didone, Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
       className={`${anticDidone.variable} ${montserrat.variable}`}
     >
       <body>
-        <div className="bg-custom-black w-full flex items-center justify-center flex-col">
+        <div className="bg-custom-black w-full flex items-center justify-center flex-col overflow-hidden">
           <Navigation />
           {children}
           <Footer />
