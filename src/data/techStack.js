@@ -59,25 +59,25 @@ export const techIcons = {
   Instagram: <BiLogoInstagram className={iconClassName} />,
 };
 
-export const techStacks = [
-  "JavaScript",
-  "Python",
-  "C++",
-  "C#",
-  "SQL",
-  "Java",
-  "HTML",
-  "CSS",
-  "Git",
-  "Unity3D",
-  "Google Cloud Platform",
-  "React.js",
-  "Next.js",
-  "TailwindCSS",
-  "Expo",
-  "Framer Motion",
-  "Firebase",
-  "Adobe Photoshop",
-  "Figma",
-  "Adobe Illustrator",
-];
+export const techStacks = {
+  "Programming Languages": [
+    "JavaScript",
+    "Python",
+    "C++",
+    "C#",
+    "SQL",
+    "Java",
+    "HTML",
+    "CSS",
+  ],
+  "Developer Tools": ["Git", "Unity3D", "Google Cloud Platform"],
+  Framework: [
+    "React.js",
+    "Next.js",
+    "TailwindCSS",
+    "Expo",
+    "Framer Motion",
+    "Firebase",
+  ],
+  Design: ["Adobe Photoshop", "Figma", "Adobe Illustrator"],
+};

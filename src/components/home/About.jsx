@@ -52,16 +52,26 @@ const About = () => {
       <div className="flex z-0">
         <div className="glass w-full overflow-x-hidden h-fit ml-16 mt-7">
           <div className="animate-rolling flex hover:pause">
-            {techStacks.map((techStack, index) => (
-              <div key={index} className="text-custom-white text-4xl mx-1 my-2">
-                {techIcons[techStack]}
-              </div>
-            ))}
-            {techStacks.map((techStack, index) => (
-              <div key={index} className="text-custom-white text-4xl mx-1 my-2">
-                {techIcons[techStack]}
-              </div>
-            ))}
+            {Object.values(techStacks).map((techStackList, index) =>
+              techStackList.map((techStack, index) => (
+                <div
+                  key={index}
+                  className="text-custom-white text-4xl mx-1 my-2"
+                >
+                  {techIcons[techStack]}
+                </div>
+              )),
+            )}
+            {Object.values(techStacks).map((techStackList, index) =>
+              techStackList.map((techStack, index) => (
+                <div
+                  key={index}
+                  className="text-custom-white text-4xl mx-1 my-2"
+                >
+                  {techIcons[techStack]}
+                </div>
+              )),
+            )}
           </div>
         </div>
         <Image
