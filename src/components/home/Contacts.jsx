@@ -15,7 +15,11 @@ const Contacts = () => {
       </Title>
       <div className="text-custom-white flex text-7xl w-full justify-evenly gap-4 my-10">
         {Object.entries(contacts).map(([type, link], index) => (
-          <Link href={link} key={index}>
+          <Link
+            href={link}
+            key={index}
+            className="hover:cursor-pointer hover:opacity-60 hover:scale-110 duration-300"
+          >
             {techIcons[type]}
           </Link>
         ))}
