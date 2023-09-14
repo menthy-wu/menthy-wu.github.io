@@ -6,8 +6,16 @@ import { techStacks, techIcons } from "@/data/techStack";
 import me from "../../../public/about/me.jpg";
 import evan from "../../../public/about/evan.jpg";
 import circles from "../../../public/about/circles.svg";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const animation = {
+    hidden: { opacity: 0, y: -30 },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
   return (
     <section
       id="about"
@@ -15,12 +23,35 @@ const About = () => {
     >
       <div className="flex w-full flex-col z-10">
         <div className="w-2/3 self-end px-4 py-6">
-          <p className="m-0 text-custom-white font-montserrats font-thin">
+          <motion.p
+            initial="hidden"
+            whileInView="show"
+            variants={animation}
+            transition={{
+              type: "tween",
+              ease: "easeInOut",
+              duration: 1,
+              delay: 0,
+            }}
+            className="m-0 text-custom-white font-montserrats font-thin"
+          >
             IF YOU WANT TO KNOW MORE
-          </p>
-          <Title text="ABOUT ME">
-            <div className="h-8 md:h-12 w-14 md:w-20 absolute bg-custom-theme -right-2 top-0 z-10" />
-          </Title>
+          </motion.p>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            variants={animation}
+            transition={{
+              type: "tween",
+              ease: "easeInOut",
+              duration: 1,
+              delay: 0.3,
+            }}
+          >
+            <Title text="ABOUT ME">
+              <div className="h-8 md:h-12 w-14 md:w-20 absolute bg-custom-theme -right-2 top-0 z-10" />
+            </Title>
+          </motion.div>
         </div>
         <div className="relative grid grid-cols-3">
           <Image
@@ -29,13 +60,35 @@ const About = () => {
           />
           <Image src={me} alt="me" className="col-span-1 -translate-y-16" />
           <div className="flex flex-col -translate-x-8 justify-between col-span-2 gap-3">
-            <div className="glass text-custom-white font-montserrats font-thin text-sm md:text-lg p-8 md:p-11 h-full">
+            <motion.div
+              initial="hidden"
+              whileInView="show"
+              variants={animation}
+              transition={{
+                type: "tween",
+                ease: "easeInOut",
+                duration: 1,
+                delay: 0.6,
+              }}
+              className="glass text-custom-white font-montserrats font-thin text-sm md:text-lg p-8 md:p-11 h-full"
+            >
               My name is Menthy Wu. I am studying
               <span className="font-normal">&nbsp;computer science&nbsp;</span>
               at University of California right now. It is really nice to meet
               you here!
-            </div>
-            <div className="glass mb-4 p-3 h-fit">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="show"
+              variants={animation}
+              transition={{
+                type: "tween",
+                ease: "easeInOut",
+                duration: 1,
+                delay: 0.6,
+              }}
+              className="glass mb-4 p-3 h-fit"
+            >
               <div className="flex items-center">
                 <LuGraduationCap className="text-custom-white text-2xl mr-2" />
                 <p className="m-0 text-custom-white font-montserrats font-thin text-base md:text-xl">
@@ -48,7 +101,7 @@ const About = () => {
               <p className="m-0 text-custom-white font-montserrats font-thin text-xs md:text-base">
                 at University of California, Riverside
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
