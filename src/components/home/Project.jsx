@@ -47,7 +47,7 @@ const Project = ({ project }) => {
             </div>
             <div className="text-4xl flex gap-2 ">
               {project.links.map((link, index) => (
-                <Link href={Object.values(link)[0]} key={index}>
+                <Link href={Object.values(link)[0]} key={index} target="_blank">
                   <div className="hover:cursor-pointer hover:opacity-60 hover:scale-110 duration-300 text-custom-white">
                     {techIcons[Object.keys(link)[0]]}
                   </div>
