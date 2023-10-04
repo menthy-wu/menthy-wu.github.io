@@ -16,6 +16,7 @@ import {
   BiEnvelope,
   BiLogoLinkedinSquare,
   BiLogoInstagram,
+  BiLink,
 } from "react-icons/bi";
 import {
   TbBrandCSharp,
@@ -57,6 +58,7 @@ export const techIcons = {
   Email: <BiEnvelope className={iconClassName} />,
   LinkedIn: <BiLogoLinkedinSquare className={iconClassName} />,
   Instagram: <BiLogoInstagram className={iconClassName} />,
+  link: <BiLink />,
 };
 
 export const techStacks = {
