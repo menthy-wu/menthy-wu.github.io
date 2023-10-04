@@ -3,8 +3,8 @@ import Image from "next/image";
 import { LuGraduationCap } from "react-icons/lu";
 import Title from "../Title";
 import { techStacks, techIcons } from "@/data/techStack";
-import me from "../../../public/about/me.jpg";
-import evan from "../../../public/about/evan.jpg";
+import me from "../../../public/about/me.webp";
+import evan from "../../../public/about/evan.webp";
 import circles from "../../../public/about/circles.svg";
 import { motion } from "framer-motion";
 
@@ -58,7 +58,11 @@ const About = () => {
             src={circles}
             className="absolute top-0 -translate-x-1/4 -translate-y-1/2 z-0"
           />
-          <Image src={me} alt="me" className="col-span-1 -translate-y-16" />
+          <Image
+            src={me}
+            alt="me"
+            className="col-span-1 -translate-y-16 rotate-90"
+          />
           <div className="flex flex-col -translate-x-8 justify-between col-span-2 gap-3">
             <motion.div
               initial="hidden"
