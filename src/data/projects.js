@@ -12,7 +12,10 @@ export const projects = [
       "The offical website for the American Society of Mechanical Engineers club at University of California, Riverside.",
     techStack: ["React.js", "Next.js", "Tailwind"],
     imagePath: require.context("../../public/projects/ASME", true),
-    links: [{ Github: "https://github.com/acm-ucr/asme-website" }],
+    links: [
+      { Github: "https://github.com/acm-ucr/asme-website" },
+      { link: "https://asme.ucrhighlanders.org/" },
+    ],
   },
   {
     title: "Phi Alpha Delta Website",
@@ -20,7 +23,12 @@ export const projects = [
       "The offical website for professional law and fraternity club at University of California, Riverside.",
     techStack: ["React.js", "Next.js", "Tailwind"],
     imagePath: require.context("../../public/projects/PAD", true),
-    links: [{ Github: "https://github.com/acm-ucr/pad-website" }],
+    links: [
+      {
+        Github: "https://github.com/acm-ucr/pad-website",
+      },
+      { link: "https://pad.ucrhighlanders.org/" },
+    ],
   },
   {
     title: "IEEE Official Website",
@@ -28,7 +36,12 @@ export const projects = [
       "The offical website for Institute of Electrical and Electronics Engineers club at University of California, Riverside.",
     techStack: ["React.js", "Next.js", "Tailwind"],
     imagePath: require.context("../../public/projects/ieee", true),
-    links: [{ Github: "https://github.com/acm-ucr/ieee-website" }],
+    links: [
+      {
+        Github: "https://github.com/acm-ucr/ieee-website",
+      },
+      { link: "https://ieee.ucrhighlanders.org/" },
+    ],
   },
   {
     title: "WARmen",
