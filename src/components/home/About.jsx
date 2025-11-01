@@ -3,7 +3,7 @@ import Image from "next/image";
 import { LuGraduationCap } from "react-icons/lu";
 import Title from "../Title";
 import { techStacks, techIcons } from "@/data/techStack";
-import me from "../../../public/about/me.jpg";
+import me from "../../../public/about/me.jpeg";
 import evan from "../../../public/about/evan.webp";
 import circles from "../../../public/about/circles.svg";
 import { motion } from "framer-motion";
