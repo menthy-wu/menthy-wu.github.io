@@ -5,7 +5,7 @@ const Artifact2 = () => {
   return (
     <div className="border-white border-2 rounded-xl p-3 mt-4">
       <div className="font-bold text-2xl">
-        Artifact: Machine Learning and Deep Learning Applications
+        Artifact 2: Machine Learning and Deep Learning Applications
       </div>
 
       <div className="font-bold mt-2">Introduction:</div>
