@@ -1,6 +1,127 @@
 "use client";
 import React from "react";
 import Title from "../Title";
+const Artifact3 = () => {
+  return (
+    <div className="border-white border-2 rounded-xl p-3 mt-4">
+      <div className="font-bold text-2xl">
+        Artifact 3: Adapting to Challenges — Learning from Biblical Leaders
+      </div>
+
+      <div className="font-bold mt-2">Introduction:</div>
+      <div>
+        This artifact explores the theme of adaptive leadership through the lens
+        of biblical figures who faced immense challenges. Their stories reveal
+        how faith, courage, and wisdom enable leaders to navigate uncertainty
+        and remain steadfast in their mission. Leadership is rarely predictable,
+        and these examples show that adaptability is a vital skill rooted in
+        both humility and trust in divine guidance.
+      </div>
+
+      <div className="font-bold mt-2">
+        Biblical Example 1: Moses — Leading Through Uncertainty
+      </div>
+      <div className="font-bold">Context:</div>
+      <div>
+        Moses was called to lead the Israelites out of Egypt, facing resistance
+        from Pharaoh, fear among his people, and the challenges of the
+        wilderness.
+      </div>
+      <div className="font-bold">Adaptive Leadership in Action:</div>
+      <div>
+        Moses adapted by continuously seeking God’s direction through prayer and
+        obedience. He learned to rely on divine wisdom instead of his own
+        strength, showing that true leadership is not about control but about
+        responsiveness to God’s guidance.
+      </div>
+      <div className="font-bold">Lesson:</div>
+      <div>
+        Adaptability often requires surrender—recognizing that flexibility and
+        faith go hand in hand when leading through uncertainty.
+      </div>
+
+      <div className="font-bold mt-2">
+        Biblical Example 2: Esther — Courage and Strategic Thinking
+      </div>
+      <div className="font-bold">Context:</div>
+      <div>
+        As queen, Esther faced a life-threatening decision: remain silent or
+        risk her life to save her people from destruction.
+      </div>
+      <div className="font-bold">Adaptive Leadership in Action:</div>
+      <div>
+        Esther sought God’s guidance through fasting and prayer, then approached
+        the king with both courage and strategy. She demonstrated that faith
+        does not mean passivity—it empowers leaders to act boldly and wisely.
+      </div>
+      <div className="font-bold">Lesson:</div>
+      <div>
+        Adaptability is not only about reacting to change but also discerning
+        the right time and method to act with faith-driven purpose.
+      </div>
+
+      <div className="font-bold mt-2">
+        Biblical Example 3: Nehemiah — Vision in the Face of Opposition
+      </div>
+      <div className="font-bold">Context:</div>
+      <div>
+        Nehemiah was tasked with rebuilding the walls of Jerusalem, encountering
+        opposition and discouragement from every side.
+      </div>
+      <div className="font-bold">Adaptive Leadership in Action:</div>
+      <div>
+        He reorganized his people, prayed for strength, and adjusted his methods
+        while staying committed to the mission. Nehemiah’s resilience and
+        flexibility allowed him to lead effectively despite external pressure.
+      </div>
+      <div className="font-bold">Lesson:</div>
+      <div>
+        Visionary leaders adapt their strategies without compromising their
+        mission. Perseverance and faith enable them to sustain progress amid
+        adversity.
+      </div>
+
+      <div className="font-bold mt-2">Key Takeaways:</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>Adaptive leadership blends faith with practical wisdom.</li>
+          <li>
+            Flexibility allows leaders to adjust without losing direction.
+          </li>
+          <li>
+            Prayer, reflection, and community support are vital to navigating
+            challenges.
+          </li>
+          <li>
+            True adaptability honors both the mission and the process of
+            transformation.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Personal Reflection Notes:</div>
+      <div className="font-bold">Value Proposition:</div>
+      <div>
+        This artifact highlights how adaptive leadership grounded in faith helps
+        modern leaders face uncertainty with confidence, resilience, and moral
+        clarity.
+      </div>
+      <div className="font-bold">Unique Value:</div>
+      <div>
+        By drawing parallels between ancient biblical leaders and contemporary
+        leadership challenges, it emphasizes timeless principles of adaptability
+        that remain relevant today.
+      </div>
+      <div className="font-bold">Relevance:</div>
+      <div>
+        These examples inspire leaders to cultivate trust, courage, and
+        flexibility in their personal and professional lives—qualities essential
+        to guiding teams and communities through change.
+      </div>
+    </div>
+  );
+};
+
 const Artifact2 = () => {
   return (
     <div className="border-white border-2 rounded-xl p-3 mt-4">
@@ -163,6 +284,7 @@ const Artifacts = () => {
       </Title>
       <Artifact1 />
       <Artifact2 />
+      <Artifact3 />
     </section>
   );
 };
