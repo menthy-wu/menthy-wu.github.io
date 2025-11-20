@@ -273,6 +273,87 @@ const Artifact1 = () => {
     </div>
   );
 };
+const Artifact4 = () => {
+  return (
+    <div className="border-white border-2 rounded-xl p-3 mt-4">
+      <div className="font-bold text-2xl">
+        Artifact 4: Navigating Human Bias in AI/ML – Personal Value & Strategy
+        Framework
+      </div>
+
+      <div className="font-bold mt-2">Introduction:</div>
+      <div>
+        This artifact presents my personal value statement and field-specific
+        strategies for navigating human bias as an AI/ML-focused leader. It
+        highlights how ethical awareness, transparency, and intentional design
+        practices shape my approach to responsible innovation.
+      </div>
+
+      <div className="font-bold mt-2">Description:</div>
+      <div>
+        The discussion explores how bias enters data systems and how leadership
+        choices influence fairness, transparency, and accountability in
+        analytics and machine learning workflows. I articulated my leadership
+        values around humility, intentional transparency, and ethical
+        responsibility, then developed strategies tailored to data and AI
+        environments.
+      </div>
+
+      <div className="font-bold mt-2">Objective:</div>
+      <div>
+        To clarify my ethical leadership stance on human bias in AI/ML systems
+        and outline practical, field-specific methods for reducing bias across
+        datasets, modeling decisions, and organizational processes.
+      </div>
+
+      <div className="font-bold mt-2">Process:</div>
+      <div>
+        Reflected on personal leadership principles related to fairness and
+        bias.
+      </div>
+      <div>
+        Identified how human decisions shape datasets, features, and model
+        outcomes.
+      </div>
+      <div>
+        Developed concrete strategies for auditing, documenting, and mitigating
+        bias in analytical workflows.
+      </div>
+      <div>
+        Considered organizational culture components such as empathy,
+        psychological safety, and reflective practice.
+      </div>
+
+      <div className="font-bold mt-2">Tools and Technologies Used:</div>
+      <div>Analytics and ML modeling workflows</div>
+      <div>Bias audit methods and fairness evaluation techniques</div>
+      <div>Team collaboration and documentation practices</div>
+
+      <div className="font-bold mt-2">Value Proposition:</div>
+      <div>
+        Establishing clear values and structured strategies for navigating bias
+        strengthens the integrity of AI/ML systems and fosters trust among
+        users, stakeholders, and team members.
+      </div>
+
+      <div className="font-bold mt-2">Unique Value:</div>
+      <div>
+        Emphasizes ethical maturity and intentional transparency rather than
+        purely technical fixes, acknowledging that leadership mindset is central
+        to mitigating bias.
+      </div>
+
+      <div className="font-bold mt-2">Relevance:</div>
+      <div>
+        Highly relevant to modern data-driven organizations where AI
+        increasingly influences decisions impacting individuals, communities,
+        and operational outcomes. This artifact demonstrates readiness to lead
+        responsibly in complex analytical environments.
+      </div>
+    </div>
+  );
+};
+
 const Artifacts = () => {
   return (
     <section
@@ -282,9 +363,10 @@ const Artifacts = () => {
       <Title text="ARTIFACT">
         <div className="h-6 w-24 absolute bg-custom-theme -left-4 -bottom-1 z-10" />
       </Title>
-      <Artifact1 />
-      <Artifact2 />
+      <Artifact4 />
       <Artifact3 />
+      <Artifact2 />
+      <Artifact1 />
     </section>
   );
 };
