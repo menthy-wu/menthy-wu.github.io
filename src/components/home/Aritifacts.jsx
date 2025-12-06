@@ -1,6 +1,187 @@
 "use client";
 import React from "react";
 import Title from "../Title";
+const Artifact5 = () => {
+  return (
+    <div className="border-white border-2 rounded-xl p-3 mt-4">
+      <div className="font-bold text-2xl">
+        Artifact 5: Personal AI/ML Leadership Framework — Guiding Change with
+        Faith and Responsibility
+      </div>
+
+      <div className="font-bold mt-2">Introduction:</div>
+      <div>
+        This artifact presents my personal AI/ML leadership framework, developed
+        through reflection on my growth, strengths, and opportunities for
+        improvement throughout this course. As AI becomes increasingly
+        integrated into organizations, leaders must combine technical insight
+        with ethical responsibility, humility, and faith. This framework
+        outlines the mission, values, objectives, and commitments that will
+        guide my development as a thoughtful and principled AI/ML leader.
+      </div>
+
+      <div className="font-bold mt-2">Mission Statement:</div>
+      <div>
+        My mission is to lead the development and integration of AI/ML systems
+        in a way that honors integrity, promotes human flourishing, and reflects
+        the principles of stewardship and service. I aim to cultivate
+        responsible, transparent, and ethical AI practices that uplift people,
+        support informed decision-making, and contribute positively to both my
+        organization and community.
+      </div>
+
+      <div className="font-bold mt-2">Core Values:</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>
+            <span className="font-bold">Integrity:</span> Ensuring honesty,
+            transparency, and ethical grounding in every decision.
+          </li>
+          <li>
+            <span className="font-bold">Stewardship:</span> Using technology
+            responsibly and recognizing the weight of leadership influence.
+          </li>
+          <li>
+            <span className="font-bold">Continuous Learning:</span> Remaining
+            humble, curious, and committed to lifelong growth in a rapidly
+            evolving field.
+          </li>
+          <li>
+            <span className="font-bold">Empathy:</span> Keeping people at the
+            center of AI work, prioritizing their well-being and needs.
+          </li>
+          <li>
+            <span className="font-bold">Collaboration:</span> Building trust and
+            working cross-functionally to ensure strong and holistic AI
+            integration.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Key Objectives:</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>
+            Strengthen my technical expertise in AI/ML, including ethical
+            design, model evaluation, and responsible deployment practices.
+          </li>
+          <li>
+            Develop stronger change leadership skills to guide teams through
+            uncertainty, innovation, and organizational transformation.
+          </li>
+          <li>
+            Promote and model ethical AI practices that align with biblical
+            principles of justice, wisdom, and compassion.
+          </li>
+          <li>
+            Foster a culture of iterative learning, creativity, and open
+            communication within my teams and professional environments.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Action Plans:</div>
+      <div className="font-bold">Short-Term (Next 6–12 Months):</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>
+            Complete advanced AI/ML coursework and certifications to deepen
+            technical capability.
+          </li>
+          <li>
+            Seek mentorship from experienced AI leaders and participate in
+            leadership development groups.
+          </li>
+          <li>
+            Integrate ethical review checkpoints—such as model cards and risk
+            assessment tools—into AI projects I contribute to.
+          </li>
+          <li>
+            Apply structured change management strategies (e.g., Kotter, ADKAR)
+            to AI-related initiatives.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Long-Term (1–3 Years):</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>
+            Lead cross-functional teams that explore or implement AI-driven
+            solutions.
+          </li>
+          <li>
+            Establish or contribute to organizational AI governance policies
+            grounded in ethical, faith-informed principles.
+          </li>
+          <li>
+            Mentor junior teammates and help build a strong internal AI talent
+            pipeline.
+          </li>
+          <li>
+            Cultivate a workplace environment where innovation, accountability,
+            and empathy shape the culture.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Evaluation and Adaptation:</div>
+      <div>
+        I will evaluate my progress through quarterly self-assessments,
+        incorporating feedback from peers and mentors. I will review and update
+        my leadership framework yearly to ensure alignment with evolving
+        technologies, responsibilities, and spiritual growth. By actively
+        reflecting on successes, challenges, and lessons learned, I will refine
+        my leadership approach and remain adaptable in a dynamic field.
+      </div>
+
+      <div className="font-bold mt-2">Key Takeaways:</div>
+      <div>
+        <ul className="list-disc list-inside">
+          <li>
+            Effective AI/ML leadership requires a balance of technical
+            expertise, ethical grounding, and humility.
+          </li>
+          <li>
+            Faith-informed values such as stewardship, wisdom, and compassion
+            strengthen responsible decision-making.
+          </li>
+          <li>
+            Clear objectives and structured action plans support intentional,
+            long-term leadership development.
+          </li>
+          <li>
+            Continuous reflection and adaptation are essential for navigating a
+            rapidly changing technological landscape.
+          </li>
+        </ul>
+      </div>
+
+      <div className="font-bold mt-2">Personal Reflection Notes:</div>
+      <div className="font-bold">Value Proposition:</div>
+      <div>
+        This artifact captures my long-term vision as an AI/ML leader, grounded
+        in faith, ethical responsibility, and a commitment to human-centered
+        technology.
+      </div>
+
+      <div className="font-bold">Unique Value:</div>
+      <div>
+        By integrating leadership principles with personal faith and technical
+        growth, this framework offers a holistic approach to navigating AI’s
+        complexities responsibly.
+      </div>
+
+      <div className="font-bold">Relevance:</div>
+      <div>
+        This personal framework guides my continued development as an ethical
+        and effective AI/ML leader—equipping me to lead change with wisdom,
+        confidence, and compassion.
+      </div>
+    </div>
+  );
+};
+
 const Artifact3 = () => {
   return (
     <div className="border-white border-2 rounded-xl p-3 mt-4">
@@ -363,6 +544,7 @@ const Artifacts = () => {
       <Title text="ARTIFACT">
         <div className="h-6 w-24 absolute bg-custom-theme -left-4 -bottom-1 z-10" />
       </Title>
+      <Artifact5 />
       <Artifact4 />
       <Artifact3 />
       <Artifact2 />
