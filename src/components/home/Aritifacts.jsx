@@ -392,6 +392,264 @@ const Artifact3 = () => {
     </div>
   );
 };
+
+const Artifact4 = () => {
+  return (
+    <div className="border-white border-2 rounded-xl p-3 mt-4">
+      <div className="font-bold text-2xl">
+        Artifact 4: Explainable AI (XAI), Model Validation, and Trustworthy AI
+        Systems
+      </div>
+
+      <div className="font-bold">Introduction:</div>
+      <div>
+        This artifact presents a visual overview of Explainable AI (XAI),
+        highlighting the challenges of interpreting large language models (LLMs)
+        such as GPT, Claude, Gemini, and LLaMA. It also explores how validation
+        techniques, performance metrics, and industry safety practices
+        contribute to building trustworthy AI systems.
+      </div>
+
+      <div className="font-bold">Description:</div>
+      <div>
+        The artifact explains why modern AI models are often considered
+        &quot;black boxes&quot; and examines the techniques organizations use to
+        improve transparency and accountability. It also demonstrates how
+        validation processes and evaluation metrics help assess reliability,
+        fairness, robustness, and overall model performance.
+      </div>
+
+      <div className="font-bold">Objective:</div>
+      <div>
+        To communicate the importance of explainability, validation, and
+        performance measurement in modern AI systems while demonstrating an
+        understanding of responsible AI development and deployment practices.
+      </div>
+
+      <div className="font-bold">Process:</div>
+
+      <div>
+        Researched Explainable AI (XAI) concepts and the challenges associated
+        with understanding decision-making processes in large language models.
+      </div>
+
+      <div>
+        Investigated industry approaches used by OpenAI, Anthropic, Google, and
+        Meta to improve AI transparency, safety, and interpretability.
+      </div>
+
+      <div>
+        Analyzed validation techniques, testing methodologies, and performance
+        metrics used to evaluate AI model reliability and robustness.
+      </div>
+
+      <div>
+        Designed an infographic-style artifact that visually connects
+        explainability, validation, and trustworthiness in AI systems for both
+        technical and non-technical audiences.
+      </div>
+
+      <div className="font-bold">Tools and Technologies Used:</div>
+
+      <div>Generative AI research platforms and academic resources</div>
+      <div>OpenAI, Anthropic, Google, and Meta AI documentation</div>
+      <div>AI explainability and model evaluation research materials</div>
+      <div>React for portfolio artifact presentation structure</div>
+
+      <div className="font-bold">What is Explainable AI (XAI)?</div>
+
+      <div>
+        <span className="font-bold">Definition:</span> Explainable AI refers to
+        methods and techniques that make AI model outputs understandable and
+        interpretable to human users.
+      </div>
+
+      <div>
+        <span className="font-bold">Purpose:</span> Increase transparency,
+        improve trust, support accountability, and help identify errors or
+        biases in AI-generated outputs.
+      </div>
+
+      <div>
+        <span className="font-bold">Importance:</span> Critical in industries
+        such as healthcare, finance, education, law, and public services where
+        AI decisions may significantly impact individuals and organizations.
+      </div>
+
+      <div className="font-bold">Key Explainability Challenges:</div>
+
+      <div>
+        <span className="font-bold">Black Box Complexity:</span> Modern LLMs
+        contain billions of parameters whose interactions collectively produce
+        outputs, making individual decisions difficult to interpret.
+      </div>
+
+      <div>
+        <span className="font-bold">Emergent Behavior:</span> Complex reasoning
+        capabilities emerge from large-scale training and are often difficult to
+        trace back to specific model components.
+      </div>
+
+      <div>
+        <span className="font-bold">Bias in Training Data:</span> Models may
+        inherit societal, cultural, or demographic biases present in their
+        training datasets.
+      </div>
+
+      <div>
+        <span className="font-bold">Hallucinations:</span> AI systems can
+        generate confident but incorrect information, creating challenges for
+        reliability and trust.
+      </div>
+
+      <div>
+        <span className="font-bold">Post-Hoc Explanations:</span> Explanations
+        generated after an output may not fully represent the model&apos;s
+        actual internal decision-making process.
+      </div>
+
+      <div className="font-bold">Validation and Testing Techniques:</div>
+
+      <div>
+        <span className="font-bold">Validation Datasets:</span> Separate
+        datasets used to evaluate model performance on unseen examples and
+        measure generalization capabilities.
+      </div>
+
+      <div>
+        <span className="font-bold">Cross Validation:</span> Multiple rounds of
+        testing across different dataset partitions to ensure consistent
+        performance and reduce overfitting.
+      </div>
+
+      <div>
+        <span className="font-bold">Human Evaluation:</span> Experts assess AI
+        outputs for accuracy, relevance, helpfulness, safety, and fairness.
+      </div>
+
+      <div>
+        <span className="font-bold">Red Team Testing:</span> Researchers
+        intentionally probe models for vulnerabilities, harmful outputs, and
+        safety weaknesses.
+      </div>
+
+      <div>
+        <span className="font-bold">Adversarial Testing:</span> Carefully
+        designed prompts attempt to expose failure modes and robustness issues.
+      </div>
+
+      <div className="font-bold">Key Performance Metrics:</div>
+
+      <div>
+        <span className="font-bold">Accuracy:</span> Measures how often a model
+        produces correct predictions overall.
+      </div>
+
+      <div>
+        <span className="font-bold">Precision:</span> Evaluates how often
+        positive predictions are actually correct.
+      </div>
+
+      <div>
+        <span className="font-bold">Recall:</span> Measures the model&apos;s
+        ability to identify all relevant positive cases.
+      </div>
+
+      <div>
+        <span className="font-bold">F1 Score:</span> Balances precision and
+        recall into a single performance metric.
+      </div>
+
+      <div>
+        <span className="font-bold">ROC-AUC:</span> Evaluates how effectively a
+        model separates positive and negative classes.
+      </div>
+
+      <div>
+        <span className="font-bold">Confusion Matrix:</span> Provides a detailed
+        breakdown of correct and incorrect predictions.
+      </div>
+
+      <div className="font-bold">Industry Explainability Efforts:</div>
+
+      <div>
+        <span className="font-bold">OpenAI:</span> Uses reinforcement learning
+        from human feedback (RLHF), safety evaluations, benchmarking, and model
+        alignment research to improve reliability and transparency.
+      </div>
+
+      <div>
+        <span className="font-bold">Anthropic:</span> Develops Constitutional AI
+        techniques that guide model behavior using explicit principles and
+        safety-focused alignment methods.
+      </div>
+
+      <div>
+        <span className="font-bold">Google Gemini:</span> Invests in responsible
+        AI frameworks, interpretability research, and comprehensive safety
+        testing procedures.
+      </div>
+
+      <div>
+        <span className="font-bold">Meta LLaMA:</span> Supports open research,
+        interpretability studies, and community-driven evaluation of model
+        behavior and performance.
+      </div>
+
+      <div className="font-bold">Current Explainability Techniques:</div>
+
+      <div>
+        <span className="font-bold">Attention Visualization:</span> Highlights
+        which inputs influenced the model&apos;s response.
+      </div>
+
+      <div>
+        <span className="font-bold">Chain-of-Thought Prompting:</span>{" "}
+        Encourages step-by-step reasoning that can make outputs easier to
+        understand.
+      </div>
+
+      <div>
+        <span className="font-bold">Interpretability Research:</span> Studies
+        internal model representations to better understand how concepts are
+        learned and processed.
+      </div>
+
+      <div>
+        <span className="font-bold">Model Auditing:</span> Systematic testing
+        for fairness, safety, robustness, and compliance.
+      </div>
+
+      <div className="font-bold">Value Proposition:</div>
+
+      <div>
+        This artifact demonstrates the ability to explain complex AI
+        explainability and validation concepts in a clear and accessible manner
+        while connecting technical model evaluation practices to ethical and
+        real-world considerations.
+      </div>
+
+      <div className="font-bold">Unique Value:</div>
+
+      <div>
+        Combines explainable AI concepts, performance evaluation methods, and
+        industry transparency initiatives into a single visual artifact that
+        highlights the relationship between model understanding, reliability,
+        and trust.
+      </div>
+
+      <div className="font-bold">Relevance:</div>
+
+      <div>
+        Relevant for AI governance, machine learning engineering, responsible AI
+        development, enterprise AI adoption, model risk management, and any
+        domain where trustworthy AI systems are required for decision-making and
+        user confidence.
+      </div>
+    </div>
+  );
+};
+
 const Artifacts = () => {
   return (
     <section
@@ -404,6 +662,7 @@ const Artifacts = () => {
       <Artifact1 />
       <Artifact2 />
       <Artifact3 />
+      <Artifact4 />
     </section>
   );
 };
