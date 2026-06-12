@@ -650,6 +650,270 @@ const Artifact4 = () => {
   );
 };
 
+const Artifact5 = () => {
+  return (
+    <div className="border-white border-2 rounded-xl p-3 mt-4">
+      <div className="font-bold text-2xl">
+        Artifact 5: Pre-Trained Model Selection and AI Trade-Off Analysis
+      </div>
+
+      <div className="font-bold">Introduction:</div>
+      <div>
+        This artifact presents a comparative analysis of popular pre-trained AI
+        models across Natural Language Processing (NLP), Generative AI, Computer
+        Vision, and Tabular Data domains. It examines the trade-offs between
+        model size, accuracy, inference speed, computational cost, and
+        explainability to support informed model selection decisions.
+      </div>
+
+      <div className="font-bold">Description:</div>
+      <div>
+        The artifact demonstrates how different AI models balance performance
+        and resource requirements. Through a decision matrix and comparative
+        analysis, it highlights the practical considerations organizations must
+        evaluate when selecting models for real-world deployment.
+      </div>
+
+      <div className="font-bold">Objective:</div>
+      <div>
+        To evaluate pre-trained AI models across multiple domains and develop a
+        structured framework for selecting models based on performance,
+        explainability, deployment constraints, and business requirements.
+      </div>
+
+      <div className="font-bold">Process:</div>
+
+      <div>
+        Researched widely adopted pre-trained models used in NLP, Generative AI,
+        Computer Vision, and Tabular Data applications.
+      </div>
+
+      <div>
+        Collected information regarding model size, benchmark accuracy,
+        inference speed, and deployment characteristics.
+      </div>
+
+      <div>
+        Evaluated explainability considerations and practical trade-offs for
+        each model category.
+      </div>
+
+      <div>
+        Developed a decision matrix that provides guidance for selecting
+        appropriate models based on application requirements.
+      </div>
+
+      <div className="font-bold">Tools and Technologies Used:</div>
+
+      <div>Academic research papers and benchmark reports</div>
+      <div>OpenAI, Google, Meta, and Hugging Face documentation</div>
+      <div>Computer Vision and NLP model evaluation resources</div>
+      <div>React for portfolio artifact presentation structure</div>
+
+      <div className="font-bold">Why Model Selection Matters</div>
+
+      <div>
+        AI model selection directly impacts performance, infrastructure costs,
+        latency, scalability, explainability, and user experience.
+      </div>
+
+      <div>
+        Larger models generally provide stronger performance but require
+        additional computational resources and may reduce interpretability.
+      </div>
+
+      <div>
+        Smaller models often offer lower latency, lower energy consumption, and
+        easier deployment while sacrificing some predictive performance.
+      </div>
+
+      <div className="font-bold">Decision Matrix</div>
+
+      <div>
+        <span className="font-bold">BERT Base (NLP)</span>
+      </div>
+      <div>Size: 110 Million Parameters</div>
+      <div>Accuracy: High</div>
+      <div>Speed: Medium</div>
+      <div>Explainability: Medium</div>
+      <div>
+        Best For: Sentiment Analysis, Classification, Information Extraction
+      </div>
+
+      <br />
+
+      <div>
+        <span className="font-bold">GPT-4 Class Models (Generative AI)</span>
+      </div>
+      <div>Size: Extremely Large (hundreds of billions+ parameters)</div>
+      <div>Accuracy: Very High</div>
+      <div>Speed: Medium to Low</div>
+      <div>Explainability: Low</div>
+      <div>
+        Best For: Conversational AI, Content Generation, Coding Assistance
+      </div>
+
+      <br />
+
+      <div>
+        <span className="font-bold">MobileNetV3 (Computer Vision)</span>
+      </div>
+      <div>Size: ~5 Million Parameters</div>
+      <div>Accuracy: Good</div>
+      <div>Speed: Very Fast</div>
+      <div>Explainability: Medium</div>
+      <div>
+        Best For: Mobile Devices, Edge AI, Real-Time Image Classification
+      </div>
+
+      <br />
+
+      <div>
+        <span className="font-bold">EfficientNet-B4 (Computer Vision)</span>
+      </div>
+      <div>Size: ~19 Million Parameters</div>
+      <div>Accuracy: Very High</div>
+      <div>Speed: Medium</div>
+      <div>Explainability: Medium</div>
+      <div>
+        Best For: Medical Imaging, Industrial Inspection, High Accuracy Vision
+        Systems
+      </div>
+
+      <br />
+
+      <div>
+        <span className="font-bold">XGBoost (Tabular Data)</span>
+      </div>
+      <div>Size: Small to Medium</div>
+      <div>Accuracy: Very High</div>
+      <div>Speed: Fast</div>
+      <div>Explainability: High</div>
+      <div>
+        Best For: Fraud Detection, Credit Scoring, Business Analytics,
+        Forecasting
+      </div>
+
+      <div className="font-bold">Trade-Off Analysis:</div>
+
+      <div>
+        <span className="font-bold">Model Size vs Accuracy:</span> Larger models
+        generally achieve stronger benchmark performance but require
+        significantly more memory, compute resources, and operational costs.
+      </div>
+
+      <div>
+        <span className="font-bold">Accuracy vs Speed:</span> Faster models are
+        often preferred for real-time applications, while highly accurate models
+        may introduce additional latency.
+      </div>
+
+      <div>
+        <span className="font-bold">Explainability vs Complexity:</span> Highly
+        complex deep learning systems frequently offer limited transparency,
+        while traditional machine learning approaches such as XGBoost provide
+        stronger interpretability.
+      </div>
+
+      <div>
+        <span className="font-bold">Deployment Cost:</span> Large foundation
+        models require expensive infrastructure compared to lightweight vision
+        models or tabular learning algorithms.
+      </div>
+
+      <div className="font-bold">Recommended Model Selection Scenarios:</div>
+
+      <div>
+        <span className="font-bold">Chatbots and AI Assistants:</span> GPT-class
+        models provide superior language generation and reasoning capabilities.
+      </div>
+
+      <div>
+        <span className="font-bold">Document Classification:</span> BERT offers
+        strong language understanding with lower resource requirements.
+      </div>
+
+      <div>
+        <span className="font-bold">Mobile Applications:</span> MobileNetV3
+        provides excellent performance under strict latency and hardware
+        constraints.
+      </div>
+
+      <div>
+        <span className="font-bold">Medical Imaging:</span> EfficientNet
+        achieves strong accuracy for high-stakes computer vision tasks.
+      </div>
+
+      <div>
+        <span className="font-bold">Business Analytics:</span> XGBoost remains
+        one of the strongest choices for structured tabular datasets.
+      </div>
+
+      <div className="font-bold">Explainability Considerations:</div>
+
+      <div>
+        BERT and GPT models rely on transformer architectures whose internal
+        decision-making processes are difficult to interpret directly.
+      </div>
+
+      <div>
+        Computer vision models can leverage visualization techniques such as
+        Grad-CAM and saliency maps to improve explainability.
+      </div>
+
+      <div>
+        XGBoost supports feature importance analysis, SHAP values, and decision
+        path explanations, making it highly interpretable for regulated
+        industries.
+      </div>
+
+      <div className="font-bold">Key Takeaways:</div>
+
+      <div>No single AI model is optimal for every use case.</div>
+
+      <div>
+        Model selection should balance accuracy, latency, explainability,
+        deployment cost, and scalability requirements.
+      </div>
+
+      <div>
+        Organizations must consider business constraints and ethical
+        requirements in addition to technical performance.
+      </div>
+
+      <div>
+        Explainability becomes increasingly important in healthcare, finance,
+        government, and other high-stakes decision-making environments.
+      </div>
+
+      <div className="font-bold">Value Proposition:</div>
+
+      <div>
+        This artifact demonstrates the ability to evaluate AI systems from both
+        technical and business perspectives while applying model comparison
+        methodologies used in machine learning engineering and AI solution
+        architecture.
+      </div>
+
+      <div className="font-bold">Unique Value:</div>
+
+      <div>
+        Combines model benchmarking, explainability analysis, and deployment
+        decision-making into a practical framework that mirrors real-world AI
+        model selection processes.
+      </div>
+
+      <div className="font-bold">Relevance:</div>
+
+      <div>
+        Relevant for Machine Learning Engineers, AI Engineers, Data Scientists,
+        Solution Architects, Product Managers, and organizations responsible for
+        selecting AI models for production environments.
+      </div>
+    </div>
+  );
+};
+
 const Artifacts = () => {
   return (
     <section
@@ -663,6 +927,7 @@ const Artifacts = () => {
       <Artifact2 />
       <Artifact3 />
       <Artifact4 />
+      <Artifact5 />
     </section>
   );
 };
